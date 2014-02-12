@@ -24,6 +24,7 @@ body {
 }
 .container {
     display: block;
+    overflow: hidden;
     width: 100%;
     
         @include bp(non-mob){
@@ -252,7 +253,7 @@ body {
     @include bp(non-mob){
         width: 200px;
         display: inline-block;
-        
+        float: left;
         .nav-btn {
             @include visuallyhidden;
         }
