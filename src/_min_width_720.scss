@@ -1,11 +1,26 @@
 #top {
 
+    width: 200px;
+    display: inline-block;
+
+    .block {
+        padding: 12px 0;
+    }
+
     .nav-btn {
         @include visuallyhidden;
     }
 }
 
 #nav {
+
+    width: auto;
+    display: inline-block;
+    float: right;
+
+    .block {
+        padding: 0;
+    }
 
     .close-btn {
         @include visuallyhidden;

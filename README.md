@@ -1,6 +1,6 @@
 Responsive-Template
 ===================
 
-Compass
+
 
 

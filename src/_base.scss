@@ -20,6 +20,9 @@ body {
     min-width: pem(320);
     background: $background-color;
 }
+.container {
+    width: 100%;
+}
 
 .highlight {
     background: #fff699;
@@ -159,6 +162,7 @@ body {
     overflow: hidden;
     width: 100%;
     color: #fff;
+
 
     .close-btn {
         display: none;
