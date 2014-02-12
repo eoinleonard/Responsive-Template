@@ -164,42 +164,16 @@ body {
     color: #fff;
 
         @include bp(non-mob){
-            width: auto;
-    display: inline-block;
-    float: right;
-
-    .block {
-        padding: 0;
-    }
-
-    .close-btn {
-        @include visuallyhidden;
-    }
-
-    .block-title {
-        @include visuallyhidden;
-    }
-
-    ul {
-        text-align: center;
-        white-space: nowrap;
-        
-    }
-
-    li {
-        display: inline-block;
-        border-right: 1px solid rgba(255,255,255, 0.1);
-
-        &:last-child {
-            border-right: none;
-        }
-
-        a {
-            padding: pem(6, 14) pem(12, 14);
-        }
+                width: auto;
+                display: inline-block;
+                float: right;
+            
         }
     .close-btn {
         display: none;
+         @include bp(non-mob) {
+            @include visuallyhidden;
+        }
     }
 
     .block-title {
@@ -211,15 +185,27 @@ body {
         position: relative;
         padding: pem(12) pem(20);
         background: $background-color;
+        @include bp(non-mob) {
+            padding: 0;
+        }
     }
 
     ul {
         @include clearfix;
         display: block;
+            @include bp(non-mob) {
+                text-align: center;
+                white-space: nowrap;
+                
+            }
     }
 
     li {
         display: block;
+        @include bp(non-mob){
+            display: inline-block;
+            border-right: 1px solid rgba(255,255,255, 0.1);
+        }
 
         a {
             display: block;
@@ -228,6 +214,9 @@ body {
             line-height: pem(18, 14);
             font-weight: bold;
             outline: none;
+                @include bp(non-mob) {
+                    padding: pem(6, 14) pem(12, 14);
+                }
 
             &:focus,
             &:hover {
@@ -239,6 +228,12 @@ body {
         &.is-active {
             a {
                 color: #fff;
+            }
+        }
+
+        &:last-child {
+            @include bp(non-mob){
+                border-right: none;
             }
         }
     }
@@ -256,7 +251,7 @@ body {
 
         .block {
         padding: 12px 0;
-    }
+        }
 
         .nav-btn {
             @include visuallyhidden;

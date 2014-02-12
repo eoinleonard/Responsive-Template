@@ -409,11 +409,32 @@ body {
   width: 100%;
   color: #fff;
 }
-/* line 167, ../src/_base.scss */
+@media (min-width: 54em) {
+  /* line 159, ../src/_base.scss */
+  #nav {
+    width: auto;
+    display: inline-block;
+    float: right;
+  }
+}
+/* line 172, ../src/_base.scss */
 #nav .close-btn {
   display: none;
 }
-/* line 171, ../src/_base.scss */
+@media (min-width: 54em) {
+  /* line 172, ../src/_base.scss */
+  #nav .close-btn {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+}
+/* line 179, ../src/_base.scss */
 #nav .block-title {
   border: 0;
   clip: rect(0 0 0 0);
@@ -424,14 +445,20 @@ body {
   position: absolute;
   width: 1px;
 }
-/* line 175, ../src/_base.scss */
+/* line 183, ../src/_base.scss */
 #nav .block {
   z-index: 2;
   position: relative;
   padding: 0.75em 1.25em;
   background: #333333;
 }
-/* line 182, ../src/_base.scss */
+@media (min-width: 54em) {
+  /* line 183, ../src/_base.scss */
+  #nav .block {
+    padding: 0;
+  }
+}
+/* line 193, ../src/_base.scss */
 #nav ul {
   *zoom: 1;
   display: block;
@@ -445,11 +472,25 @@ body {
 #nav ul:after {
   clear: both;
 }
-/* line 187, ../src/_base.scss */
+@media (min-width: 54em) {
+  /* line 193, ../src/_base.scss */
+  #nav ul {
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+/* line 203, ../src/_base.scss */
 #nav li {
   display: block;
 }
-/* line 190, ../src/_base.scss */
+@media (min-width: 54em) {
+  /* line 203, ../src/_base.scss */
+  #nav li {
+    display: inline-block;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+/* line 210, ../src/_base.scss */
 #nav li a {
   display: block;
   color: #ccc;
@@ -458,63 +499,46 @@ body {
   font-weight: bold;
   outline: none;
 }
-/* line 199, ../src/_base.scss */
+@media (min-width: 54em) {
+  /* line 210, ../src/_base.scss */
+  #nav li a {
+    padding: 0.42857em 0.85714em;
+  }
+}
+/* line 222, ../src/_base.scss */
 #nav li a:focus, #nav li a:hover {
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
 }
-/* line 206, ../src/_base.scss */
+/* line 229, ../src/_base.scss */
 #nav li.is-active a {
   color: #fff;
 }
+@media (min-width: 54em) {
+  /* line 234, ../src/_base.scss */
+  #nav li:last-child {
+    border-right: none;
+  }
+}
 
-/* line 214, ../src/_base.scss */
+/* line 243, ../src/_base.scss */
 #top {
   z-index: 100;
   position: relative;
   color: #fff;
   background: #333333;
 }
-/* line 220, ../src/_base.scss */
-#top .block-title {
-  margin: 0;
-  font-size: 1.875em;
-  line-height: 1.2em;
-  text-align: center;
-  white-space: nowrap;
-}
-/* line 228, ../src/_base.scss */
-#top .nav-btn {
-  position: absolute;
-  top: 1.5em;
-  left: 1.875em;
-}
-
-/* line 235, ../src/_base.scss */
-#main {
-  background: #fff;
-}
-/* line 238, ../src/_base.scss */
-#main .block {
-  padding: 2.625em 1.875em;
-}
-
-/* line 243, ../src/_base.scss */
-footer[role="contentinfo"] {
-  background: #ddd;
-}
-
-@media screen and (min-width: 45.0625em) {
-  /* line 1, ../src/_min_width_720.scss */
+@media (min-width: 54em) {
+  /* line 243, ../src/_base.scss */
   #top {
     width: 200px;
     display: inline-block;
   }
-  /* line 6, ../src/_min_width_720.scss */
+  /* line 252, ../src/_base.scss */
   #top .block {
     padding: 12px 0;
   }
-  /* line 10, ../src/_min_width_720.scss */
+  /* line 256, ../src/_base.scss */
   #top .nav-btn {
     border: 0;
     clip: rect(0 0 0 0);
@@ -525,60 +549,36 @@ footer[role="contentinfo"] {
     position: absolute;
     width: 1px;
   }
-
-  /* line 15, ../src/_min_width_720.scss */
-  #nav {
-    height: 100%;
-    width: auto;
-    display: inline-block;
-    float: right;
-  }
-  /* line 21, ../src/_min_width_720.scss */
-  #nav .block {
-    padding: 0;
-  }
-  /* line 25, ../src/_min_width_720.scss */
-  #nav .close-btn {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  /* line 29, ../src/_min_width_720.scss */
-  #nav .block-title {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  /* line 33, ../src/_min_width_720.scss */
-  #nav ul {
-    text-align: center;
-    white-space: nowrap;
-    height: 100%;
-  }
-  /* line 39, ../src/_min_width_720.scss */
-  #nav li {
-    display: inline-block;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  /* line 43, ../src/_min_width_720.scss */
-  #nav li:last-child {
-    border-right: none;
-  }
-  /* line 47, ../src/_min_width_720.scss */
-  #nav li a {
-    padding: 0.42857em 0.85714em;
-  }
 }
+/* line 261, ../src/_base.scss */
+#top .block-title {
+  margin: 0;
+  font-size: 1.875em;
+  line-height: 1.2em;
+  text-align: center;
+  white-space: nowrap;
+}
+/* line 269, ../src/_base.scss */
+#top .nav-btn {
+  position: absolute;
+  top: 1.5em;
+  left: 1.875em;
+}
+
+/* line 276, ../src/_base.scss */
+#main {
+  background: #fff;
+}
+/* line 279, ../src/_base.scss */
+#main .block {
+  padding: 2.625em 1.875em;
+}
+
+/* line 284, ../src/_base.scss */
+footer[role="contentinfo"] {
+  background: #ddd;
+}
+
 @media screen and (max-width: 45em) {
   /* line 3, ../src/_max_width_720.scss */
   #nav {
