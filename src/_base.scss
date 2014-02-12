@@ -9,6 +9,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
     margin: 0;
 }
 
+
+
 a {
     text-decoration: none;
 }
@@ -21,7 +23,13 @@ body {
     background: $background-color;
 }
 .container {
+    display: block;
     width: 100%;
+    
+        @include bp(non-mob){
+            width: 80%;
+            margin: 0 auto;
+        }
 }
 
 .highlight {
@@ -90,9 +98,9 @@ body {
 
 .block {
     position: relative;
-    margin: 0 auto;
-    padding: pem(24) pem(20);
-    max-width: pem(960);
+    
+    
+   
 }
 
 .close-btn {
@@ -204,7 +212,7 @@ body {
         display: block;
         @include bp(non-mob){
             display: inline-block;
-            border-right: 1px solid rgba(255,255,255, 0.1);
+            
         }
 
         a {
@@ -231,11 +239,6 @@ body {
             }
         }
 
-        &:last-child {
-            @include bp(non-mob){
-                border-right: none;
-            }
-        }
     }
 }
 
@@ -245,14 +248,11 @@ body {
     position: relative;
     color: #fff;
     background: $background-color;
+    padding: 16px 0;
     @include bp(non-mob){
         width: 200px;
         display: inline-block;
-
-        .block {
-        padding: 12px 0;
-        }
-
+        
         .nav-btn {
             @include visuallyhidden;
         }
@@ -264,12 +264,19 @@ body {
         line-height: pem(36, 30);
         text-align: center;
         white-space: nowrap;
+            @include bp(non-mob){
+                text-align: left;
+            }
     }
 
     .nav-btn {
         position: absolute;
-        top: pem(24);
+        top: pem(0);
         left: pem(30);
+    }
+    a {
+        color: white;
+
     }
 }
 
