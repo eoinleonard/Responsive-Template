@@ -528,6 +528,7 @@ footer[role="contentinfo"] {
 
   /* line 15, ../src/_min_width_720.scss */
   #nav {
+    height: 100%;
     width: auto;
     display: inline-block;
     float: right;
@@ -562,17 +563,18 @@ footer[role="contentinfo"] {
   #nav ul {
     text-align: center;
     white-space: nowrap;
+    height: 100%;
   }
-  /* line 38, ../src/_min_width_720.scss */
+  /* line 39, ../src/_min_width_720.scss */
   #nav li {
     display: inline-block;
     border-right: 1px solid rgba(255, 255, 255, 0.1);
   }
-  /* line 42, ../src/_min_width_720.scss */
+  /* line 43, ../src/_min_width_720.scss */
   #nav li:last-child {
     border-right: none;
   }
-  /* line 46, ../src/_min_width_720.scss */
+  /* line 47, ../src/_min_width_720.scss */
   #nav li a {
     padding: 0.42857em 0.85714em;
   }
