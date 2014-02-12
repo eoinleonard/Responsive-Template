@@ -216,6 +216,10 @@ body {
     position: relative;
     color: #fff;
     background: $background-color;
+    @include bp(non-mob){
+        width: 200px;
+        display: inline-block;
+    }
 
     .block-title {
         margin: 0;

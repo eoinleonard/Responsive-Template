@@ -33,3 +33,15 @@ $background-color: #333;
     position: absolute;
     width: 1px;
 }
+
+@mixin bp($point) {
+  @if $point == non-mob {
+    @media (min-width: 54em) { @content; }
+  }
+  @else if $point == mama-bear {
+    @media (min-width: 72em) { @content; }
+  }
+  @else if $point == papa-bear {
+    @media (min-width: 88em)  { @content; }
+  }
+}
