@@ -20,10 +20,6 @@ $step: 4 !default;
 
 
 
-@media screen and (min-width: 45.0625em) {
-    @import "min_width_720";
-}
-
 @media screen and (max-width: 45em) {
     @import "max_width_720";
 }
