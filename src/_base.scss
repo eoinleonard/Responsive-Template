@@ -20,7 +20,8 @@ body {
     position: relative;
     width: 100%;
     min-width: pem(320);
-    background: #f9f9f9;     //bg colour on body//
+    background: #f9f9f9;
+        //bg colour on body//
         img {
             border: none;
             max-width: 100%;
@@ -32,6 +33,7 @@ body {
     background: none; //site-header bg colour - insert here//
     border-bottom: 1px solid #d1d1d1;
     margin-bottom: pem(24);
+    
 }
 .container {
     display: block;
@@ -41,7 +43,7 @@ body {
     
         @include bp(non-mob){
             width: 80%;
-            max-width: 1280px;
+            max-width: 1080px;
             margin: 0 auto;
         }
 }
@@ -274,7 +276,7 @@ body {
     
     padding: 16px 0;
     @include bp(non-mob){
-        width: 200px;
+        width: 200px;          //width of main logo in header//
         display: inline-block;
         float: left;
         .nav-btn {
