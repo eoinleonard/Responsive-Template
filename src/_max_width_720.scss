@@ -52,7 +52,12 @@ $nav-off-canvas-width: 70%;
 
         a {
             padding: pem(12, 14) pem(30, 14);
+            padding-left: 80px;
         }
+            &:before {
+                content: ""; //Place icons here that will only appear on mobile nav - pseudo//
+
+            }
     }
 }
 
@@ -63,7 +68,7 @@ $nav-off-canvas-width: 70%;
         #nav {
             height: 100%;
             width: $nav-off-canvas-width;
-            background: $background-color;
+            background: $brand-color;    //This changes the background colour of the "revealed" mobile nav//
             @include box-shadow(inset pem(-24) 0 pem(24) pem(-12) rgba(0,0,0, 0.25));
 
             .block {

@@ -20,15 +20,28 @@ body {
     position: relative;
     width: 100%;
     min-width: pem(320);
-    background: $background-color;
+    background: #f9f9f9;     //bg colour on body//
+        img {
+            border: none;
+            max-width: 100%;
+            height: auto;
+        }
+}
+#site-header {
+    width: 100%;
+    background: none; //site-header bg colour - insert here//
+    border-bottom: 1px solid #d1d1d1;
+    margin-bottom: pem(24);
 }
 .container {
     display: block;
     overflow: hidden;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     
         @include bp(non-mob){
             width: 80%;
+            max-width: 1280px;
             margin: 0 auto;
         }
 }
@@ -98,10 +111,7 @@ body {
 }
 
 .block {
-    position: relative;
-    
-    
-   
+    position: relative;  
 }
 
 .close-btn {
@@ -111,7 +121,7 @@ body {
     padding: 0;
     border: 0;
     outline: none;
-    background: $background-color url("../img/close-btn.svg") left center no-repeat;
+    background:  url("../img/close-btn.svg") left center no-repeat;
     background-size: pem(30) pem(30);
     overflow: hidden;
     white-space: nowrap;
@@ -136,7 +146,7 @@ body {
     padding: 0;
     border: 0;
     outline: none;
-    background: $background-color url("../img/nav-icon.svg") left center no-repeat;
+    background: url("../img/nav-btn.svg") left center no-repeat;        //three line nav icon //
     background-size: pem(30) pem(24);
     overflow: hidden;
     white-space: nowrap;
@@ -176,7 +186,7 @@ body {
                 width: auto;
                 display: inline-block;
                 float: right;
-            
+                
         }
     .close-btn {
         display: none;
@@ -193,9 +203,9 @@ body {
         z-index: 2;
         position: relative;
         padding: pem(12) pem(20);
-        background: $background-color;
+        
         @include bp(non-mob) {
-            padding: 0;
+            padding: 19px 0 0 0;
         }
     }
 
@@ -218,25 +228,38 @@ body {
 
         a {
             display: block;
-            color: #ccc;
-            font-size: pem(14);
-            line-height: pem(18, 14);
+            color: #fff;
+            font-size: pem(14);             //font-size of items on "revealed" mobile nav
+            line-height: pem(18, 14);  
             font-weight: bold;
             outline: none;
                 @include bp(non-mob) {
+                    color: #333;
                     padding: pem(6, 14) pem(12, 14);
                 }
 
-            &:focus,
+            &:focus,    
             &:hover {
                 color: #fff;
-                background: rgba(255,255,255, 0.1);
+                background: darken($brand-color, 1.5%);
+                    @include bp(non-mob) {
+                        background: none;
+                        color: #ccc;
+                        }
+            }
+
+            &:active {
+                color: red;
+                background: darken($brand-color, 6%);
+                @include bp(non-mob) {
+                        background: none;
+                        }
             }
         }
 
         &.is-active {
             a {
-                color: #fff;
+                color: red;
             }
         }
 
@@ -248,7 +271,7 @@ body {
     z-index: 100;
     position: relative;
     color: #fff;
-    background: $background-color;
+    
     padding: 16px 0;
     @include bp(non-mob){
         width: 200px;
@@ -273,19 +296,19 @@ body {
     .nav-btn {
         position: absolute;
         top: pem(0);
-        left: pem(30);
+        left: pem(0);
     }
     a {
-        color: white;
+        color: $brand-color;   //Main logo in top header (if this is text), otherwise replace with logo image in HTML//
 
     }
 }
 
 #main {
-    background: #fff;
+   
 
     .block {
-        padding: pem(42) pem(30);
+        
     }
 }
 
