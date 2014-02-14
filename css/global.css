@@ -529,7 +529,7 @@ body img {
 /* line 244, ../src/_base.scss */
 #nav li a:focus, #nav li a:hover {
   color: #fff;
-  background: #aaaaaa;
+  background: #3e3e3e;
 }
 @media (min-width: 50em) {
   /* line 244, ../src/_base.scss */
@@ -541,7 +541,7 @@ body img {
 /* line 253, ../src/_base.scss */
 #nav li a:active {
   color: red;
-  background: #9f9f9f;
+  background: #333333;
 }
 @media (min-width: 50em) {
   /* line 253, ../src/_base.scss */
@@ -602,7 +602,7 @@ body img {
 }
 /* line 303, ../src/_base.scss */
 #top a {
-  color: #aeaeae;
+  color: #424242;
 }
 
 /* line 317, ../src/_base.scss */
@@ -673,7 +673,7 @@ footer[role="contentinfo"] {
   .js-ready #nav {
     height: 100%;
     width: 70%;
-    background: #aeaeae;
+    background: #424242;
     -webkit-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
     -moz-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
     box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
