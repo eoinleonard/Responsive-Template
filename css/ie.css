@@ -1,14 +1,14 @@
 /*
-Syntax error: Undefined mixin 'bp'.
-        on line 44 of /Applications/XAMPP/xamppfiles/htdocs/Responsive-Template/src/_base.scss, in `bp'
-        from line 44 of /Applications/XAMPP/xamppfiles/htdocs/Responsive-Template/src/_base.scss
+Syntax error: Undefined variable: "$header-bg".
+        on line 33 of /Applications/XAMPP/xamppfiles/htdocs/Responsive-Template/src/_base.scss
         from line 7 of /Applications/XAMPP/xamppfiles/htdocs/Responsive-Template/src/ie.scss
 
 Backtrace:
-/Applications/XAMPP/xamppfiles/htdocs/Responsive-Template/src/_base.scss:44:in `bp'
-/Applications/XAMPP/xamppfiles/htdocs/Responsive-Template/src/_base.scss:44
+/Applications/XAMPP/xamppfiles/htdocs/Responsive-Template/src/_base.scss:33
 /Applications/XAMPP/xamppfiles/htdocs/Responsive-Template/src/ie.scss:7
-/Users/eoinleonard/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+/Users/eoinleonard/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/variable.rb:49:in `_perform'
+/Users/eoinleonard/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/node.rb:40:in `perform'
+/Users/eoinleonard/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
 /Users/eoinleonard/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/eoinleonard/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /Users/eoinleonard/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -63,4 +63,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'bp'.\A         on line 44 of /Applications/XAMPP/xamppfiles/htdocs/Responsive-Template/src/_base.scss, in `bp'\A         from line 44 of /Applications/XAMPP/xamppfiles/htdocs/Responsive-Template/src/_base.scss\A         from line 7 of /Applications/XAMPP/xamppfiles/htdocs/Responsive-Template/src/ie.scss"; }
+  content: "Syntax error: Undefined variable: \"$header-bg\".\A         on line 33 of /Applications/XAMPP/xamppfiles/htdocs/Responsive-Template/src/_base.scss\A         from line 7 of /Applications/XAMPP/xamppfiles/htdocs/Responsive-Template/src/ie.scss"; }

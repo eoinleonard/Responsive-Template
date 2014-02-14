@@ -1,5 +1,6 @@
 $background-color: #333;
-$brand-color: #009388;
+$brand-color: #aeaeae;
+$header-bg: white;
 
 @function pem($px, $base: 16) {
     @return ($px / $base) + em;

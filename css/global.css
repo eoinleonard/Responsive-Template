@@ -268,7 +268,7 @@ body img {
 /* line 31, ../src/_base.scss */
 #site-header {
   width: 100%;
-  background: none;
+  background: white;
   border-bottom: 1px solid #d1d1d1;
   margin-bottom: 1.5em;
 }
@@ -484,12 +484,12 @@ body img {
   *zoom: 1;
   display: block;
 }
-/* line 10, ../src/_bits.scss */
+/* line 11, ../src/_bits.scss */
 #nav ul:before, #nav ul:after {
   content: "";
   display: table;
 }
-/* line 14, ../src/_bits.scss */
+/* line 15, ../src/_bits.scss */
 #nav ul:after {
   clear: both;
 }
@@ -529,7 +529,7 @@ body img {
 /* line 244, ../src/_base.scss */
 #nav li a:focus, #nav li a:hover {
   color: #fff;
-  background: #008b81;
+  background: #aaaaaa;
 }
 @media (min-width: 50em) {
   /* line 244, ../src/_base.scss */
@@ -541,7 +541,7 @@ body img {
 /* line 253, ../src/_base.scss */
 #nav li a:active {
   color: red;
-  background: #00746c;
+  background: #9f9f9f;
 }
 @media (min-width: 50em) {
   /* line 253, ../src/_base.scss */
@@ -602,7 +602,7 @@ body img {
 }
 /* line 303, ../src/_base.scss */
 #top a {
-  color: #009388;
+  color: #aeaeae;
 }
 
 /* line 317, ../src/_base.scss */
@@ -673,7 +673,7 @@ footer[role="contentinfo"] {
   .js-ready #nav {
     height: 100%;
     width: 70%;
-    background: #009388;
+    background: #aeaeae;
     -webkit-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
     -moz-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
     box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);

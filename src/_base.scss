@@ -30,7 +30,7 @@ body {
 }
 #site-header {
     width: 100%;
-    background: none; //site-header bg colour - insert here//
+    background: $header-bg; //site-header bg colour - insert here//
     border-bottom: 1px solid #d1d1d1;
     margin-bottom: pem(24);
     
