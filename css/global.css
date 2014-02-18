@@ -323,7 +323,7 @@ table {
   width: 100%;
   background-color: #333333;
   border-bottom: 1px solid #333;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 @media (min-width: 54em) {
   /* line 13, ../src/_layout.scss */
@@ -341,7 +341,7 @@ table {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.05);
 }
 
-/* line 30, ../src/_layout.scss */
+/* line 29, ../src/_layout.scss */
 .box-nosidebar, .page-content {
   padding-top: 22px;
 }
