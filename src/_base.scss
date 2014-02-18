@@ -28,89 +28,12 @@ body {
             height: auto;
         }
 }
-#site-header {
-    width: 100%;
-    background: $header-bg; //site-header bg colour - insert here//
-    border-bottom: 1px solid #d1d1d1;
-    margin-bottom: pem(24);
-    
-}
-.container {
-    display: block;
-    overflow: hidden;
-    width: 90%;
-    margin: auto;
-    
-        @include bp(non-mob){
-            width: 80%;
-            max-width: 1080px;
-            margin: 0 auto;
-        }
-}
 
-.highlight {
-    background: #fff699;
-    padding: 0 0.5em;
-}
 
-.prose {
 
-    ul, ol {
-        list-style: outside disc;
-        font-size: pem(16);
-        line-height: pem(24);
-        margin-bottom: pem(24);
-    }
 
-    p {
-        font-size: pem(16);
-        line-height: pem(24);
-        margin-bottom: pem(24);
 
-        &.small {
-            color: #666;
-            font-size: pem(13);
-            line-height: pem(24, 13);
-            margin-bottom: pem(24, 13);
-        }
 
-        &.medium {
-            color: #666;
-            font-size: pem(14);
-            line-height: pem(24, 14);
-            margin-bottom: pem(24, 14);
-        }
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-
-    h1 {
-        font-size: pem(30);
-        line-height: pem(36, 30);
-        margin-bottom: pem(12, 30);
-    }
-
-    h2 {
-        font-size: pem(24);
-        line-height: pem(30, 24);
-        margin-bottom: pem(12, 24);
-    }
-
-    a {
-        color: #6d7173;
-        border-bottom: 1px solid #a1cfe5;
-        text-decoration: none;
-        outline: none;
-
-        &:focus,
-        &:hover {
-            color: #4ab336;
-            border-bottom-color: #77b36b;
-        }
-    }
-}
 
 .block {
     position: relative;  
@@ -285,8 +208,8 @@ body {
     z-index: 100;
     position: relative;
     color: #fff;
+    padding: 16px 0 20px 0;
     
-    padding: 16px 0;
     @include bp(non-mob){
         width: 200px;          //width of main logo in header//
         display: inline-block;

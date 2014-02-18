@@ -1,0 +1,18 @@
+.container {
+    display: block;
+    width: 90%;
+    margin: auto;
+    
+        @include bp(non-mob){
+            width: 80%;
+            max-width: 1080px;
+            margin:  auto;
+        }
+}
+
+#site-header {
+    width: 100%;
+    background-color: $header-bg; //site-header bg colour - insert here//
+    border-bottom: 1px solid #d1d1d1;
+    margin-bottom: pem(24); 
+}
