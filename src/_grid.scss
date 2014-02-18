@@ -1,0 +1,52 @@
+.row {
+  width: 100%;
+  display: inline-block;
+  clear: both;
+}
+
+
+.container .col {
+  float: left;
+  padding-right: 1em;
+  
+}
+
+
+.container .col.one       {   width: 25%;   }
+.container .col.two,      
+.container .col.three,    
+.container .col.four      {   width: 50%;   }  
+.container .col.five,      
+.container .col.six,       
+.container .col.seven,     
+.container .col.eight,    
+.container .col.nine,      
+.container .col.ten,       
+.container .col.eleven,    
+.container .col.twelve,    
+.container .col.thirteen,  
+.container .col.fourteen,  
+.container .col.fifteen,   
+.container .col.sixteen   {   width: 100%; padding-right: 0;    }
+
+
+.group:before,
+.container:before,
+.row:before,  /*** clearfix solution - add class .group to the element **/
+.group:after,
+.container:after,
+.row:after {
+    content:"";
+    display:table;
+
+}
+.group:after,
+.container:after,
+.row:after {
+    clear:both;
+    margin-bottom: -6px; /*this was creating a padding effect on bottom of all rows */
+}
+.group,
+.container {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}

@@ -234,6 +234,75 @@ table {
   border-spacing: 0;
 }
 
+/* line 1, ../src/_grid.scss */
+.row {
+  width: 100%;
+  display: inline-block;
+  clear: both;
+}
+
+/* line 8, ../src/_grid.scss */
+.container .col {
+  float: left;
+  padding-right: 1em;
+}
+
+/* line 15, ../src/_grid.scss */
+.container .col.one {
+  width: 25%;
+}
+
+/* line 18, ../src/_grid.scss */
+.container .col.two,
+.container .col.three,
+.container .col.four {
+  width: 50%;
+}
+
+/* line 30, ../src/_grid.scss */
+.container .col.five,
+.container .col.six,
+.container .col.seven,
+.container .col.eight,
+.container .col.nine,
+.container .col.ten,
+.container .col.eleven,
+.container .col.twelve,
+.container .col.thirteen,
+.container .col.fourteen,
+.container .col.fifteen,
+.container .col.sixteen {
+  width: 100%;
+  padding-right: 0;
+}
+
+/* line 38, ../src/_grid.scss */
+.group:before,
+.container:before,
+.row:before,
+.group:after,
+.container:after,
+.row:after {
+  content: "";
+  display: table;
+}
+
+/* line 45, ../src/_grid.scss */
+.group:after,
+.container:after,
+.row:after {
+  clear: both;
+  margin-bottom: -6px;
+  /*this was creating a padding effect on bottom of all rows */
+}
+
+/* line 50, ../src/_grid.scss */
+.group,
+.container {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+
 /* line 3, ../src/_base.scss */
 ul, ol {
   padding: 0;
@@ -256,7 +325,7 @@ body {
   position: relative;
   width: 100%;
   min-width: 20em;
-  background: #f9f9f9;
+  background: #eaeaea;
 }
 /* line 25, ../src/_base.scss */
 body img {
