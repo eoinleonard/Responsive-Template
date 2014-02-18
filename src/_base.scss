@@ -162,10 +162,10 @@ body {
           top: 0.5em;
           width: 24px;
           height: 3px;
-          background: black;
+          background: $nav-btn-color;
           box-shadow: 
-            0 8px 0 0 black,
-            0 16px 0 0 black;
+            0 8px 0 0 $nav-btn-color,
+            0 16px 0 0 $nav-btn-color;
         }
 
     .no-svg & {
