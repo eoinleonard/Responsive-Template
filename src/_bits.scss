@@ -2,11 +2,15 @@ $background-color: #eaeaea;
 
 $brand-color: #e54e27;
 
-$header-bg: white;  // #site-header background-color
+$header-bg: white;              // #site-header background-color
 
-$nav-btn-color: #000;  // colour of three line nav icon
+$nav-bg:  #333;                 // sliding nav background-color
+
+$nav-btn-color: #000;           // colour of three line nav icon
 
 $link-color: #36aeda;
+
+
 
 @function pem($px, $base: 16) {
     @return ($px / $base) + em;

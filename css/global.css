@@ -376,7 +376,7 @@ p a:active {
 }
 /* line 44, ../src/_typography.scss */
 #nav ul li a {
-  color: #e6e6e6;
+  color: #e8e8e8;
   font-size: 0.875em;
   line-height: 1.28571em;
   font-weight: bold;
@@ -391,20 +391,19 @@ p a:active {
 }
 /* line 56, ../src/_typography.scss */
 #nav ul li a:focus, #nav ul li a:hover {
-  color: #fff;
-  background: #e44820;
+  color: #e54e27;
+  background: #2e2e2e;
 }
 @media (min-width: 54em) {
   /* line 56, ../src/_typography.scss */
   #nav ul li a:focus, #nav ul li a:hover {
     background: none;
-    color: #ccc;
   }
 }
 /* line 65, ../src/_typography.scss */
 #nav ul li a:active {
-  color: red;
-  background: #d4401a;
+  color: #e8e8e8;
+  background: #242424;
 }
 @media (min-width: 54em) {
   /* line 65, ../src/_typography.scss */
@@ -412,9 +411,23 @@ p a:active {
     background: none;
   }
 }
-/* line 75, ../src/_typography.scss */
+/* line 74, ../src/_typography.scss */
+#nav ul li.is-active {
+  background: #2e2e2e;
+}
+@media (min-width: 54em) {
+  /* line 74, ../src/_typography.scss */
+  #nav ul li.is-active {
+    background: none;
+  }
+}
+/* line 79, ../src/_typography.scss */
 #nav ul li.is-active a {
-  color: red;
+  color: #e54e27;
+}
+/* line 81, ../src/_typography.scss */
+#nav ul li.is-active a:active {
+  color: #e8e8e8;
 }
 
 /* line 3, ../src/_base.scss */
@@ -581,12 +594,12 @@ body img {
   *zoom: 1;
   display: block;
 }
-/* line 30, ../src/_bits.scss */
+/* line 34, ../src/_bits.scss */
 #nav ul:before, #nav ul:after {
   content: "";
   display: table;
 }
-/* line 34, ../src/_bits.scss */
+/* line 38, ../src/_bits.scss */
 #nav ul:after {
   clear: both;
 }
@@ -729,7 +742,7 @@ footer[role="contentinfo"] {
   .js-ready #nav {
     height: 100%;
     width: 70%;
-    background: #e54e27;
+    background: #333333;
     -webkit-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
     -moz-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
     box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);

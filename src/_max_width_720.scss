@@ -68,7 +68,7 @@ $nav-off-canvas-width: 70%;
         #nav {
             height: 100%;
             width: $nav-off-canvas-width;
-            background: $brand-color;    //This changes the background colour of the "revealed" mobile nav//
+            background: $nav-bg;    //This changes the background colour of the "revealed" mobile nav//
             @include box-shadow(inset pem(-24) 0 pem(24) pem(-12) rgba(0,0,0, 0.25));
 
             .block {
