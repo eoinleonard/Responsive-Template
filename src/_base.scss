@@ -148,16 +148,28 @@ body {
     padding: 0;
     border: 0;
     outline: none;
-    background: url("../img/nav-btn.svg") left center no-repeat;        //three line nav icon //
+    background: left center no-repeat;        //three line nav icon //
     background-size: pem(30) pem(24);
     overflow: hidden;
     white-space: nowrap;
     text-indent: 100%;
     @include opacity(0.7);
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0.5em;
+          width: 24px;
+          height: 3px;
+          background: black;
+          box-shadow: 
+            0 8px 0 0 black,
+            0 16px 0 0 black;
+        }
 
     .no-svg & {
-        background-image: url("../img/nav-icon.png");
+        //background-image: url("../img/nav-icon.png");
     }
 
     &:hover,

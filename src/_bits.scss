@@ -38,7 +38,7 @@ $header-bg: white;
 
 @mixin bp($point) {
   @if $point == non-mob {
-    @media (min-width: 50em) { @content; }
+    @media (min-width: 54em) { @content; }
   }
   @else if $point == mama-bear {
     @media (min-width: 72em) { @content; }
