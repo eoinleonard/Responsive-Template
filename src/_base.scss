@@ -178,6 +178,10 @@ body {
             @include bp(non-mob){
                 text-align: left;
             }
+            img {
+                width: 200px;
+                margin: auto;
+            }
     }
 
     .nav-btn {
@@ -185,19 +189,14 @@ body {
         top: pem(0);
         left: pem(0);
     }
+
+    
     a {
         color: $brand-color;   //Main logo in top header (if this is text), otherwise replace with logo image in HTML//
 
     }
 }
 
-#main {
-   
-
-    .block {
-        
-    }
-}
 
 footer[role="contentinfo"] {
     background: #ddd;

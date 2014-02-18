@@ -645,18 +645,23 @@ body img {
     text-align: left;
   }
 }
-/* line 183, ../src/_base.scss */
+/* line 181, ../src/_base.scss */
+#top .block-title img {
+  width: 200px;
+  margin: auto;
+}
+/* line 187, ../src/_base.scss */
 #top .nav-btn {
   position: absolute;
   top: 0em;
   left: 0em;
 }
-/* line 188, ../src/_base.scss */
+/* line 194, ../src/_base.scss */
 #top a {
   color: #e54e27;
 }
 
-/* line 202, ../src/_base.scss */
+/* line 201, ../src/_base.scss */
 footer[role="contentinfo"] {
   background: #ddd;
 }
