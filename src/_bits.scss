@@ -2,32 +2,21 @@ $background-color: #eaeaea;
 
 $brand-color: #e54e27;
 
-$header-bg: white;              // #site-header background-color
+$header-bg: #333;              // #site-header background-color
 
 $nav-bg:  #333;                 // sliding nav background-color
 
-$nav-btn-color: #000;           // colour of three line nav icon
+$nav-btn-color: #e8e8e8;           // colour of three line nav icon
 
 $link-color: #36aeda;
 
-
+$padding: 22px;
 
 @function pem($px, $base: 16) {
     @return ($px / $base) + em;
 }
 
-@mixin nav-btn {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 0.5em;
-          width: 24px;
-          height: 3px;
-          background: $nav-btn-color;
-          box-shadow: 
-            0 8px 0 0 $nav-btn-color,
-            0 16px 0 0 $nav-btn-color;
-}
+
 
 @mixin clearfix {
     &:before,
@@ -40,6 +29,8 @@ $link-color: #36aeda;
     }
     *zoom: 1;
 }
+
+
 
 // Hide from both screenreaders and browsers: h5bp.com/u
 @mixin hidden {

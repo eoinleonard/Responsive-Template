@@ -1,6 +1,7 @@
 body {
 	color: #333;
 	font-family: 'Ubuntu', sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,13 +44,13 @@ p {
 
 		    		a {
 		    		color: #e8e8e8;					//font colour of open mobile nav
-		    		font-size: pem(14);             //font-size of items on "revealed" mobile nav
-		            line-height: pem(18, 14);  
+		    		font-size: 14px;             //font-size of items on "revealed" mobile nav
+		             
 		            font-weight: bold;
 		            outline: none;
 		                @include bp(non-mob) {
-		                    color: #333;
-		                    padding: pem(6, 14) pem(12, 14);
+		                    
+		                    padding: 16px 2px 28px 2px;  //non mobile layout - nav items - need to adjust this depending on size of logo
 		                }
 
 		                &:focus,    
@@ -58,7 +59,7 @@ p {
 			                background: darken($nav-bg, 2%);
 			                    @include bp(non-mob) {
 			                        background: none;
-			                      
+			                      	border-bottom: 4px solid $brand-color;
 			                        }
 			            } //focus
 
@@ -75,9 +76,14 @@ p {
 		    			background: darken($nav-bg, 2%);
 			    			@include bp(non-mob) {
 		                        background: none;
+		                        
 	                        	}
 			            a {
 			                color: $brand-color;
+			                @include bp(non-mob) {
+		                        background: none;
+		                        border-bottom: 4px solid $brand-color;
+	                        	}
 			                	&:active {
 			                		color: #e8e8e8;
 			                	}
