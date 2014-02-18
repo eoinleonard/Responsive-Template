@@ -4,10 +4,25 @@ $brand-color: #e54e27;
 
 $header-bg: white;  // #site-header background-color
 
-$nav-btn-color: #eaeaea;  // colour of three line nav icon
+$nav-btn-color: #000;  // colour of three line nav icon
+
+$link-color: #36aeda;
 
 @function pem($px, $base: 16) {
     @return ($px / $base) + em;
+}
+
+@mixin nav-btn {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0.5em;
+          width: 24px;
+          height: 3px;
+          background: $nav-btn-color;
+          box-shadow: 
+            0 8px 0 0 $nav-btn-color,
+            0 16px 0 0 $nav-btn-color;
 }
 
 @mixin clearfix {

@@ -1,0 +1,84 @@
+body {
+	color: #333;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $brand-color;
+	line-height: 1.2em;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 1.5em;
+	padding-bottom: 1.675em;
+		
+		a {
+			color: $link-color;
+				&:hover,
+				&:active {
+					text-decoration: underline;
+				}
+
+				&:active {
+					color: darken($link-color, 10%);
+				}
+		}
+}
+
+#nav {
+    text-transform: uppercase;
+    ul {
+		  @include bp(non-mob) {
+            text-align: center;
+            white-space: nowrap;
+            
+            }
+		    	li {
+
+		    		a {
+		    		color: darken(#fff, 10%);
+		    		font-size: pem(14);             //font-size of items on "revealed" mobile nav
+		            line-height: pem(18, 14);  
+		            font-weight: bold;
+		            outline: none;
+		                @include bp(non-mob) {
+		                    color: #333;
+		                    padding: pem(6, 14) pem(12, 14);
+		                }
+
+		                &:focus,    
+			            &:hover {
+			                color: #fff;
+			                background: darken($brand-color, 1.5%);
+			                    @include bp(non-mob) {
+			                        background: none;
+			                        color: #ccc;
+			                        }
+			            } //focus
+
+			            &:active {
+		                color: red;
+		                background: darken($brand-color, 6%);
+			                @include bp(non-mob) {
+	                        background: none;
+                        	}
+            			} //active
+		    		}
+
+		    		&.is-active {
+			            a {
+			                color: red;
+			            }
+			        }
+
+		    	}
+    } //ul
+    	
+} //nav
+

@@ -12,11 +12,11 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 
 
 a {
-    text-decoration: none;
+    
 }
 
 body {
-    color: #333;
+    
     position: relative;
     width: 100%;
     min-width: pem(320);
@@ -28,10 +28,6 @@ body {
             height: auto;
         }
 }
-
-
-
-
 
 
 
@@ -79,16 +75,7 @@ body {
     @include opacity(0.7);
     -webkit-tap-highlight-color: rgba(0,0,0,0);
         &:after {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 0.5em;
-          width: 24px;
-          height: 3px;
-          background: $nav-btn-color;
-          box-shadow: 
-            0 8px 0 0 $nav-btn-color,
-            0 16px 0 0 $nav-btn-color;
+         @include nav-btn
         }
 
     .no-svg & {
@@ -117,7 +104,6 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    color: #fff;
 
         @include bp(non-mob){
                 width: auto;
@@ -149,11 +135,7 @@ body {
     ul {
         @include clearfix;
         display: block;
-            @include bp(non-mob) {
-                text-align: center;
-                white-space: nowrap;
-                
-            }
+          
     }
 
     li {
@@ -165,39 +147,7 @@ body {
 
         a {
             display: block;
-            color: #fff;
-            font-size: pem(14);             //font-size of items on "revealed" mobile nav
-            line-height: pem(18, 14);  
-            font-weight: bold;
-            outline: none;
-                @include bp(non-mob) {
-                    color: #333;
-                    padding: pem(6, 14) pem(12, 14);
-                }
-
-            &:focus,    
-            &:hover {
-                color: #fff;
-                background: darken($brand-color, 1.5%);
-                    @include bp(non-mob) {
-                        background: none;
-                        color: #ccc;
-                        }
-            }
-
-            &:active {
-                color: red;
-                background: darken($brand-color, 6%);
-                @include bp(non-mob) {
-                        background: none;
-                        }
-            }
-        }
-
-        &.is-active {
-            a {
-                color: red;
-            }
+              
         }
 
     }
