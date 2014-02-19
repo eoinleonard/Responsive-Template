@@ -60,13 +60,37 @@
 		}
 	}
 	a.index {
-		
+		position: relative;
 		
 		img {
-			background-color: red;
+			background-color: $bread-bg;
 			padding: 5px;
 			margin-bottom: -2px;
+			opacity: 0.6;
+			&:hover
+			{
+				opacity: 1;
+			}
+			&:active
+			{
+				opacity: 0.3;
+			}
 		}
+		&:after {
+					content: "";
+					width: 0; 
+					height: 0; 
+					border-left: 17px solid transparent;
+					border-right: 17px solid transparent;
+					border-bottom: 17px solid $bread-bg;
+					position: absolute;
+					z-index: 100;
+					top: 7px;
+					right: -24px;
+					transform:rotate(90deg);
+			      	-ms-transform:rotate(90deg);
+			      	-webkit-transform:rotate(90deg);
+				}
 	    
 		}
 	li {
@@ -75,26 +99,61 @@
     		font-size: 12px;
 		}
 
+
 		li {
 			
-			
+			position: relative;
 			background: none repeat scroll 0 0 lighten($bread-bg, 5%);
 			&:hover {
 				background: none repeat scroll 0 0 lighten($bread-bg, 12%);
 				a {
 					color: #e8e8e8;
 				}
+				&:after {
+					content: "";
+					width: 0; 
+					height: 0; 
+					border-left: 17px solid transparent;
+					border-right: 17px solid transparent;
+					border-bottom: 17px solid lighten($bread-bg, 12%);
+					position: absolute;
+					top: 7px;
+					right: -24px;
+					transform:rotate(90deg);
+			      	-ms-transform:rotate(90deg);
+			      	-webkit-transform:rotate(90deg);
+				}
+
 			}
+			&:after {
+					content: "";
+					width: 0; 
+					height: 0; 
+					border-left: 17px solid transparent;
+					border-right: 17px solid transparent;
+					border-bottom: 17px solid lighten($bread-bg, 5%);
+					position: absolute;
+					top: 7px;
+					right: -24px;
+					transform:rotate(90deg);
+			      	-ms-transform:rotate(90deg);
+			      	-webkit-transform:rotate(90deg);
+				}
 			&:active {
 				background: none repeat scroll 0 0 lighten($bread-bg, 25%);
 				a {
 					color: $header-bg;
 				}
+				&:after {
+					
+					border-bottom: 17px solid lighten($bread-bg, 25%);
+					
+				}
 			}
 			a {
 				border-radius: 0;
 			    color: #bcbbbb;
-			    padding: 9px 16px 9px 22px;
+			    padding: 9px 16px 9px 30px;
 			    font-size: 12px;
 			    
 			}

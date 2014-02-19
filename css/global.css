@@ -449,42 +449,106 @@ table {
 #breadcrumbs ul ul {
   margin-left: -4px;
 }
+/* line 62, ../src/_breadcrumbs.scss */
+#breadcrumbs a.index {
+  position: relative;
+}
 /* line 65, ../src/_breadcrumbs.scss */
 #breadcrumbs a.index img {
-  background-color: red;
+  background-color: #3d3d3d;
   padding: 5px;
   margin-bottom: -2px;
+  opacity: 0.6;
 }
-/* line 73, ../src/_breadcrumbs.scss */
+/* line 71, ../src/_breadcrumbs.scss */
+#breadcrumbs a.index img:hover {
+  opacity: 1;
+}
+/* line 75, ../src/_breadcrumbs.scss */
+#breadcrumbs a.index img:active {
+  opacity: 0.3;
+}
+/* line 79, ../src/_breadcrumbs.scss */
+#breadcrumbs a.index:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-bottom: 17px solid #3d3d3d;
+  position: absolute;
+  z-index: 100;
+  top: 7px;
+  right: -24px;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+/* line 97, ../src/_breadcrumbs.scss */
 #breadcrumbs li a {
   background: none repeat scroll 0 0;
   font-size: 12px;
 }
-/* line 78, ../src/_breadcrumbs.scss */
+/* line 103, ../src/_breadcrumbs.scss */
 #breadcrumbs li li {
+  position: relative;
   background: none repeat scroll 0 0 #4a4a4a;
 }
-/* line 82, ../src/_breadcrumbs.scss */
+/* line 107, ../src/_breadcrumbs.scss */
 #breadcrumbs li li:hover {
   background: none repeat scroll 0 0 #5c5c5c;
 }
-/* line 84, ../src/_breadcrumbs.scss */
+/* line 109, ../src/_breadcrumbs.scss */
 #breadcrumbs li li:hover a {
   color: #e8e8e8;
 }
-/* line 88, ../src/_breadcrumbs.scss */
+/* line 112, ../src/_breadcrumbs.scss */
+#breadcrumbs li li:hover:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-bottom: 17px solid #5c5c5c;
+  position: absolute;
+  top: 7px;
+  right: -24px;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+/* line 128, ../src/_breadcrumbs.scss */
+#breadcrumbs li li:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-bottom: 17px solid #4a4a4a;
+  position: absolute;
+  top: 7px;
+  right: -24px;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+/* line 142, ../src/_breadcrumbs.scss */
 #breadcrumbs li li:active {
   background: none repeat scroll 0 0 #7d7d7d;
 }
-/* line 90, ../src/_breadcrumbs.scss */
+/* line 144, ../src/_breadcrumbs.scss */
 #breadcrumbs li li:active a {
   color: #333333;
 }
-/* line 94, ../src/_breadcrumbs.scss */
+/* line 147, ../src/_breadcrumbs.scss */
+#breadcrumbs li li:active:after {
+  border-bottom: 17px solid #7d7d7d;
+}
+/* line 153, ../src/_breadcrumbs.scss */
 #breadcrumbs li li a {
   border-radius: 0;
   color: #bcbbbb;
-  padding: 9px 16px 9px 22px;
+  padding: 9px 16px 9px 30px;
   font-size: 12px;
 }
 
