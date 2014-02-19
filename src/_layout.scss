@@ -14,11 +14,20 @@
     width: 100%;
     background-color: $header-bg; //site-header bg colour - insert here//
     border-bottom: 1px solid #333;
-    margin-bottom: 8px; 
-    	@include bp(non-mob) {
-    		margin-bottom: 22px;
-    	}
+    
+    	
 }
+
+.stripe-grey {
+    margin-bottom: 16px;
+        @include bp(non-mob) {
+                margin-bottom: 28px;
+            }
+
+
+}
+
+
 
 .box, .box-nosidebar {
 	width: 100%;
@@ -37,7 +46,7 @@
 
 .box {
     display: block;
-   
+
         @include bp(non-mob) {
             display: table;
         }

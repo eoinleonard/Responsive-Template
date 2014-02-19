@@ -1,0 +1,103 @@
+.menu {
+    overflow: hidden;
+    
+     a {
+     	background: none repeat scroll 0 0;
+    	color: #F2F1E6;
+    	text-decoration: none;
+    		&:hover {
+    			color: $brand-color;
+    		}
+    		&:active {
+    			
+    			color: #F2F1E6;
+    		}
+
+     }
+     a,
+     span {
+     	display: block;
+	    line-height: normal;
+	    text-transform: uppercase;
+     }
+     a,
+     span,
+     li {
+     	position: relative;
+     }
+     li {
+     	display: inline-block;
+    	vertical-align: middle;
+
+     }
+
+     
+
+}
+
+#breadcrumbs {
+		display: inline-block;
+    	vertical-align: top;
+    	background: none repeat scroll 0 0 ;
+  		width: 100%;
+	ul,
+	a,
+	span {
+		display: inline-block;
+    	vertical-align: top;
+
+	}
+	img {
+		height: 31px;
+  		margin: 0;
+	}
+	a {
+		position: relative;
+	}
+	ul {
+		ul {
+			margin-left: -4px;
+		}
+	}
+	a.index {
+		
+		
+		img {
+			background-color: red;
+			padding: 5px;
+			margin-bottom: -2px;
+		}
+	    
+		}
+	li {
+		a {
+			background: none repeat scroll 0 0 ;
+    		font-size: 12px;
+		}
+
+		li {
+			
+			
+			background: none repeat scroll 0 0 lighten($bread-bg, 5%);
+			&:hover {
+				background: none repeat scroll 0 0 orange;
+				a {
+					color: blue;
+				}
+			}
+			&:active {
+				background: none repeat scroll 0 0 pink;
+				a {
+					color: orange;
+				}
+			}
+			a {
+				border-radius: 0;
+			    color: #bcbbbb;
+			    padding: 9px 16px 9px 22px;
+			    font-size: 12px;
+			    
+			}
+		}
+	}
+}
