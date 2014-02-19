@@ -466,19 +466,19 @@ table {
 }
 /* line 82, ../src/_breadcrumbs.scss */
 #breadcrumbs li li:hover {
-  background: none repeat scroll 0 0 orange;
+  background: none repeat scroll 0 0 #5c5c5c;
 }
 /* line 84, ../src/_breadcrumbs.scss */
 #breadcrumbs li li:hover a {
-  color: blue;
+  color: #e8e8e8;
 }
 /* line 88, ../src/_breadcrumbs.scss */
 #breadcrumbs li li:active {
-  background: none repeat scroll 0 0 pink;
+  background: none repeat scroll 0 0 #7d7d7d;
 }
 /* line 90, ../src/_breadcrumbs.scss */
 #breadcrumbs li li:active a {
-  color: orange;
+  color: #333333;
 }
 /* line 94, ../src/_breadcrumbs.scss */
 #breadcrumbs li li a {

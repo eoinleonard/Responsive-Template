@@ -80,15 +80,15 @@
 			
 			background: none repeat scroll 0 0 lighten($bread-bg, 5%);
 			&:hover {
-				background: none repeat scroll 0 0 orange;
+				background: none repeat scroll 0 0 lighten($bread-bg, 12%);
 				a {
-					color: blue;
+					color: #e8e8e8;
 				}
 			}
 			&:active {
-				background: none repeat scroll 0 0 pink;
+				background: none repeat scroll 0 0 lighten($bread-bg, 25%);
 				a {
-					color: orange;
+					color: $header-bg;
 				}
 			}
 			a {
