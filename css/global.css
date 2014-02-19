@@ -435,15 +435,15 @@ table {
   background-color: #3d3d3d;
   padding: 6px;
   margin-bottom: -2px;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 /* line 58, ../src/_breadcrumbs.scss */
 #breadcrumbs a.index img:hover {
-  opacity: 1;
+  opacity: 0.4;
 }
 /* line 62, ../src/_breadcrumbs.scss */
 #breadcrumbs a.index img:active {
-  opacity: 0.3;
+  opacity: 1;
 }
 /* line 66, ../src/_breadcrumbs.scss */
 #breadcrumbs a.index:after {
@@ -472,7 +472,7 @@ table {
   font-weight: bold;
   color: #cfcfcf;
   background: none repeat scroll 0 0 #4a4a4a;
-  padding: 10px 22px 10px 30px;
+  padding: 10px 12px 10px 34px;
   position: relative;
 }
 /* line 100, ../src/_breadcrumbs.scss */
@@ -503,12 +503,29 @@ table {
 /* line 124, ../src/_breadcrumbs.scss */
 #breadcrumbs ul li li a:active {
   color: #e8e8e8;
+  background: #8a8a8a;
 }
-/* line 129, ../src/_breadcrumbs.scss */
+/* line 127, ../src/_breadcrumbs.scss */
+#breadcrumbs ul li li a:active:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 17px solid #8a8a8a;
+  position: absolute;
+  z-index: 100;
+  top: 8px;
+  right: -43px;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+/* line 145, ../src/_breadcrumbs.scss */
 #breadcrumbs ul li li li a {
   background: none repeat scroll 0 0 #575757;
 }
-/* line 132, ../src/_breadcrumbs.scss */
+/* line 148, ../src/_breadcrumbs.scss */
 #breadcrumbs ul li li li a:after {
   content: "";
   width: 0;
@@ -524,13 +541,34 @@ table {
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
 }
-/* line 147, ../src/_breadcrumbs.scss */
+/* line 163, ../src/_breadcrumbs.scss */
 #breadcrumbs ul li li li a:hover {
   background: #707070;
 }
-/* line 149, ../src/_breadcrumbs.scss */
+/* line 165, ../src/_breadcrumbs.scss */
 #breadcrumbs ul li li li a:hover:after {
   border-bottom: 17px solid #707070;
+}
+/* line 171, ../src/_breadcrumbs.scss */
+#breadcrumbs ul li li li a:active {
+  color: #e8e8e8;
+  background: #8a8a8a;
+}
+/* line 174, ../src/_breadcrumbs.scss */
+#breadcrumbs ul li li li a:active:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 17px solid #8a8a8a;
+  position: absolute;
+  z-index: 100;
+  top: 8px;
+  right: -43px;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
 }
 
 /* line 1, ../src/_typography.scss */
