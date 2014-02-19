@@ -23,6 +23,7 @@
 .box, .box-nosidebar {
 	width: 100%;
 	background-color: white;
+    margin-bottom: $padding;
 	@include box-shadow(0 0 7px rgba(0, 0, 0, 0.05));
 }
 
@@ -34,9 +35,38 @@
 	
 }
 
-.sidebar {
+.box {
+    display: block;
+   
+        @include bp(non-mob) {
+            display: table;
+        }
+
+        .page-content {
+            width: 100%;
+            
+            @include bp(non-mob) {
+                display: table-cell;
+                vertical-align: top;
+            }
+        }
+
+        .sidebar {
+            width: 100%;
+            background-color: $sidebar-bg;
+
+            @include bp(non-mob) {
+                display: table-cell;
+                min-width: 200px;
+            }
 
 }
+            
+}
+
+
+
+
 
 .page-content {
 
