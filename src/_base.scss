@@ -9,7 +9,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
     margin: 0;
 }
 
-
+.intro h2,
+        h1 {
+    text-align: center;
+}
 
 a {
     
@@ -38,6 +41,10 @@ body {
 
 .stripe-grey {
     background-color: $bread-bg;
+    border-top: 1px solid #303030;
+}
+.stripe-mid-grey {
+    background-color: #444444;
 }
 
 .block {
