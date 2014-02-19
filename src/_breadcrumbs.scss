@@ -197,10 +197,65 @@
                 }
                 }
             }
-        }
-        li.current {
+            .current {
                     a {
-                        color: red;
+                        color: darken(#e8e8e8, 10%);
+                        background: none repeat scroll 0 0 lighten($bread-bg, 10%);
+                        &:hover,
+                        &:active {
+                            color: darken(#e8e8e8, 10%);
+                            background: none repeat scroll 0 0 lighten($bread-bg, 10%);
+
+                        }
+                        &:hover {
+                            &:after {
+                                content: "";
+                                width: 0; 
+                                height: 0; 
+                                border-left: 35px solid transparent;
+                                border-right: 35px solid transparent;
+                                border-bottom: 17px solid lighten($bread-bg, 10%);
+                                position: absolute;
+                                z-index: 100;
+                                top: 8px;
+                                right: -43px;
+                                transform:rotate(90deg);
+                                -ms-transform:rotate(90deg);
+                                -webkit-transform:rotate(90deg);
+                            }
+                        } 
+
+                    }
+                }
+        }
+        .current {
+                    a {
+                        color: darken(#e8e8e8, 10%);
+                        background: none repeat scroll 0 0 lighten($bread-bg, 5%);
+                        &:hover,
+                        &:active {
+                            color: darken(#e8e8e8, 10%);
+                            background: none repeat scroll 0 0 lighten($bread-bg, 5%);
+
+                        }
+                        &:hover {
+                            &:after {
+                                content: "";
+                                width: 0; 
+                                height: 0; 
+                                border-left: 35px solid transparent;
+                                border-right: 35px solid transparent;
+                                border-bottom: 17px solid lighten($bread-bg, 5%);
+                                position: absolute;
+                                z-index: 100;
+                                top: 8px;
+                                right: -43px;
+                                transform:rotate(90deg);
+                                -ms-transform:rotate(90deg);
+                                -webkit-transform:rotate(90deg);
+                            }
+                        } 
+
                     }
                 }
 

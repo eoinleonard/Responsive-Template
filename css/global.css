@@ -582,9 +582,57 @@ table {
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
 }
-/* line 202, ../src/_breadcrumbs.scss */
-#breadcrumbs ul li li.current a {
-  color: red;
+/* line 201, ../src/_breadcrumbs.scss */
+#breadcrumbs ul li li .current a {
+  color: #cfcfcf;
+  background: none repeat scroll 0 0 #575757;
+}
+/* line 205, ../src/_breadcrumbs.scss */
+#breadcrumbs ul li li .current a:hover, #breadcrumbs ul li li .current a:active {
+  color: #cfcfcf;
+  background: none repeat scroll 0 0 #575757;
+}
+/* line 211, ../src/_breadcrumbs.scss */
+#breadcrumbs ul li li .current a:hover:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 17px solid #575757;
+  position: absolute;
+  z-index: 100;
+  top: 8px;
+  right: -43px;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+/* line 232, ../src/_breadcrumbs.scss */
+#breadcrumbs ul li .current a {
+  color: #cfcfcf;
+  background: none repeat scroll 0 0 #4a4a4a;
+}
+/* line 236, ../src/_breadcrumbs.scss */
+#breadcrumbs ul li .current a:hover, #breadcrumbs ul li .current a:active {
+  color: #cfcfcf;
+  background: none repeat scroll 0 0 #4a4a4a;
+}
+/* line 242, ../src/_breadcrumbs.scss */
+#breadcrumbs ul li .current a:hover:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 17px solid #4a4a4a;
+  position: absolute;
+  z-index: 100;
+  top: 8px;
+  right: -43px;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
 }
 
 /* line 1, ../src/_typography.scss */
