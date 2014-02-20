@@ -838,6 +838,298 @@ table {
   -webkit-transform: rotate(90deg);
 }
 
+/* line 1, ../src/_infographic.scss */
+#info {
+  float: none;
+  width: 100%;
+  height: 1220px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+/* line 10, ../src/_infographic.scss */
+#info #info-full {
+  width: 140px;
+  margin: 0 auto;
+  padding: 0 0  0;
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+}
+/* line 17, ../src/_infographic.scss */
+#info #info-full:after {
+  content: "";
+  width: 0px;
+  height: 1000px;
+  position: absolute;
+  top: 60px;
+  right: 59px;
+  background-color: transparent;
+  border: 12px solid #555;
+  border-radius: 0;
+  z-index: -1;
+}
+/* line 32, ../src/_infographic.scss */
+#info a,
+#info span {
+  vertical-align: middle;
+  display: table-cell;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  line-height: 1em;
+  height: 140px;
+  width: 140px;
+  font-size: 18px;
+}
+
+/* line 47, ../src/_infographic.scss */
+#info-full li {
+  padding: 0;
+  width: 140px;
+  height: 140px;
+  list-style: none;
+  position: absolute;
+  background-color: #e54e27;
+  border-radius: 100%;
+  border: 5px solid #e6e6e6;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+/* line 59, ../src/_infographic.scss */
+#info-full li a {
+  color: white;
+  padding-bottom: 5px;
+  position: relative;
+  z-index: 10;
+}
+/* line 73, ../src/_infographic.scss */
+#info-full li li {
+  width: 69px;
+  height: 69px;
+  border: 3px solid #e6e6e6;
+  position: absolute;
+  transition: all 0.3s;
+  background-color: #3f92bc;
+}
+/* line 83, ../src/_infographic.scss */
+#info-full li li a:before {
+  transition: all 0.3s;
+  content: " ";
+  width: 0px;
+  height: 0px;
+  background-color: pink;
+  position: absolute;
+  top: 31.5px;
+  left: 31.5px;
+  z-index: -10;
+  border-radius: 100%;
+}
+/* line 99, ../src/_infographic.scss */
+#info-full li li a,
+#info-full li li span {
+  height: 69px;
+  width: 69px;
+  font-size: 12px;
+  padding: 0 0 4px 0;
+  text-align: center;
+}
+/* line 109, ../src/_infographic.scss */
+#info-full li li:hover a:before {
+  content: " ";
+  width: 63px;
+  height: 63px;
+  background-color: #00b7e2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+/* line 133, ../src/_infographic.scss */
+#info .info-leads a,
+#info #info .info-conversions a,
+#info #info .info-reporting a {
+  padding-bottom: 5px;
+}
+
+/* line 139, ../src/_infographic.scss */
+#info .info-leads {
+  position: absolute;
+  top: 140px;
+}
+/* line 143, ../src/_infographic.scss */
+#info .info-conversions {
+  position: absolute;
+  top: 550px;
+}
+/* line 148, ../src/_infographic.scss */
+#info .info-reporting {
+  position: absolute;
+  top: 950px;
+}
+
+/* line 155, ../src/_infographic.scss */
+.info-top-left {
+  top: -71px;
+  right: 100px;
+}
+/* line 158, ../src/_infographic.scss */
+.info-top-left:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 14px solid #e6e6e6;
+  position: absolute;
+  right: -3px;
+  bottom: -3px;
+  transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-40deg);
+  /* Safari and Chrome */
+}
+
+/* line 176, ../src/_infographic.scss */
+.info-top-middle {
+  top: -120px;
+  left: 30px;
+}
+/* line 179, ../src/_infographic.scss */
+.info-top-middle:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 17px solid #e6e6e6;
+  position: absolute;
+  right: 23px;
+  bottom: -19px;
+}
+
+/* line 193, ../src/_infographic.scss */
+.info-top-right {
+  top: -71px;
+  right: -44px;
+}
+/* line 196, ../src/_infographic.scss */
+.info-top-right:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 14px solid #e6e6e6;
+  position: absolute;
+  left: -2px;
+  bottom: -3px;
+  transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  /* IE 9 */
+  -webkit-transform: rotate(40deg);
+  /* Safari and Chrome */
+}
+
+/* line 211, ../src/_infographic.scss */
+.info-bottom-left {
+  top: 131px;
+  right: 100px;
+}
+/* line 214, ../src/_infographic.scss */
+.info-bottom-left:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 14px solid #e6e6e6;
+  position: absolute;
+  right: 2px;
+  top: -7px;
+  transform: rotate(212deg);
+  -ms-transform: rotate(212deg);
+  /* IE 9 */
+  -webkit-transform: rotate(212deg);
+  /* Safari and Chrome */
+}
+
+/* line 230, ../src/_infographic.scss */
+.info-bottom-middle {
+  top: 175px;
+  left: 28px;
+}
+/* line 233, ../src/_infographic.scss */
+.info-bottom-middle:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 21px solid #e6e6e6;
+  position: absolute;
+  left: 23px;
+  top: -23px;
+}
+
+/* line 247, ../src/_infographic.scss */
+.info-bottom-right {
+  top: 134px;
+  right: -44px;
+}
+/* line 251, ../src/_infographic.scss */
+.info-bottom-right:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 14px solid #e6e6e6;
+  position: absolute;
+  left: -2px;
+  top: -4px;
+  transform: rotate(144deg);
+  -ms-transform: rotate(144deg);
+  /* IE 9 */
+  -webkit-transform: rotate(144deg);
+  /* Safari and Chrome */
+}
+
+/* line 272, ../src/_infographic.scss */
+.info-leads a:before,
+.info-conversions a:before,
+.info-reporting a:before {
+  transition: all 0.3s;
+  content: " ";
+  width: 0px;
+  height: 0px;
+  background-color: #44a04f;
+  position: absolute;
+  top: 65px;
+  left: 65px;
+  z-index: -10;
+  border-radius: 100%;
+}
+/* line 287, ../src/_infographic.scss */
+.info-leads a:hover:before,
+.info-conversions a:hover:before,
+.info-reporting a:hover:before {
+  transition: all 0.3s;
+  content: " ";
+  width: 130px;
+  height: 130px;
+  background-color: #44a04f;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -10;
+  border-radius: 100%;
+}
+
 /* line 1, ../src/_typography.scss */
 body {
   color: #333;
@@ -949,17 +1241,17 @@ p a:active {
   color: #e8e8e8;
 }
 
-/* line 98, ../src/_typography.scss */
+/* line 100, ../src/_typography.scss */
 #overview, #summary {
   text-align: center;
 }
 @media (min-width: 46em) {
-  /* line 98, ../src/_typography.scss */
+  /* line 100, ../src/_typography.scss */
   #overview, #summary {
     text-align: left;
   }
 }
-/* line 103, ../src/_typography.scss */
+/* line 105, ../src/_typography.scss */
 #overview h3, #summary h3 {
   color: #333;
   font-size: 36px;
@@ -970,24 +1262,24 @@ p a:active {
   margin-bottom: 44px;
 }
 @media (min-width: 46em) {
-  /* line 103, ../src/_typography.scss */
+  /* line 105, ../src/_typography.scss */
   #overview h3, #summary h3 {
     text-align: center;
   }
 }
-/* line 116, ../src/_typography.scss */
+/* line 118, ../src/_typography.scss */
 #overview h4, #summary h4 {
   font-size: 20px;
 }
 @media (min-width: 46em) {
-  /* line 116, ../src/_typography.scss */
+  /* line 118, ../src/_typography.scss */
   #overview h4, #summary h4 {
     margin-left: 66px;
     margin-bottom: 4px;
   }
 }
 @media (min-width: 46em) {
-  /* line 125, ../src/_typography.scss */
+  /* line 127, ../src/_typography.scss */
   #overview h4,
   #overview p, #summary h4,
   #summary p {
@@ -996,7 +1288,7 @@ p a:active {
     margin-left: 66px;
   }
 }
-/* line 135, ../src/_typography.scss */
+/* line 137, ../src/_typography.scss */
 #overview hr, #summary hr {
   width: 50%;
   border: 0;
@@ -1005,7 +1297,7 @@ p a:active {
   margin-bottom: 44px;
 }
 @media (min-width: 46em) {
-  /* line 135, ../src/_typography.scss */
+  /* line 137, ../src/_typography.scss */
   #overview hr, #summary hr {
     margin-bottom: 0;
     height: 0;
@@ -1013,7 +1305,7 @@ p a:active {
   }
 }
 @media (min-width: 46em) {
-  /* line 148, ../src/_typography.scss */
+  /* line 150, ../src/_typography.scss */
   #overview img, #summary img {
     position: absolute;
   }
