@@ -97,6 +97,7 @@
 				  position: absolute;  
 				  transition: all 0.3s;
 				  background-color: #3f92bc;
+				  
 				  	a {
 
 					  		&:before {
@@ -150,8 +151,8 @@
 	            .info-leads a, 
 	#info .info-conversions a, 
 	  #info .info-reporting a {
-		  padding-bottom: 5px;
-
+		  padding-bottom: 10px;
+		  color: #eaeaea;
 		}
 }
 
@@ -168,11 +169,19 @@
 	.info-conversions{
 	  position: absolute;
 	  top: 550px;
+	  background-image: url(../img/icon-info.svg);
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  background-size: 140px;
 	  
 	}
 	.info-reporting {
 	  position: absolute;
 	  top: 950px;
+	  background-image: url(../img/icon-info.svg);
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  background-size: 140px;
 	  
 	}
 
@@ -299,7 +308,7 @@
 			  				content: " ";
 			  				width: 0px;
 			  				height: 0px;
-			  				background-color: rgba(0, 0, 0, 0.1);
+			  				background-color: rgba(0, 0, 0, 0.05);
 			  				position: absolute;
 			  				top: 65px;
 			  				left: 65px;
@@ -314,7 +323,7 @@
 			  				content: " ";
 			  				width: 130px;
 			  				height: 130px;
-			  				background-color: rgba(0, 0, 0, 0.1);
+			  				background-color: rgba(0, 0, 0, 0.05);
 			  				top: 0px;
 			  				left: 0px;
 			  				z-index: -10;

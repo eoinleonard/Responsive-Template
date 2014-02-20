@@ -934,7 +934,7 @@ table {
   transition: all 0.3s;
   background-color: #3f92bc;
 }
-/* line 102, ../src/_infographic.scss */
+/* line 103, ../src/_infographic.scss */
 #info-full li li a:before {
   transition: all 0.3s;
   content: " ";
@@ -947,7 +947,7 @@ table {
   z-index: -10;
   border-radius: 100%;
 }
-/* line 118, ../src/_infographic.scss */
+/* line 119, ../src/_infographic.scss */
 #info-full li li a,
 #info-full li li span {
   height: 69px;
@@ -956,7 +956,7 @@ table {
   padding: 0 0 4px 0;
   text-align: center;
 }
-/* line 128, ../src/_infographic.scss */
+/* line 129, ../src/_infographic.scss */
 #info-full li li:hover a:before {
   content: " ";
   width: 63px;
@@ -968,14 +968,15 @@ table {
   z-index: -10;
 }
 
-/* line 152, ../src/_infographic.scss */
+/* line 153, ../src/_infographic.scss */
 #info .info-leads a,
 #info #info .info-conversions a,
 #info #info .info-reporting a {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+  color: #eaeaea;
 }
 
-/* line 159, ../src/_infographic.scss */
+/* line 160, ../src/_infographic.scss */
 #info .info-leads {
   position: absolute;
   top: 140px;
@@ -984,23 +985,31 @@ table {
   background-position: center center;
   background-size: 140px;
 }
-/* line 168, ../src/_infographic.scss */
+/* line 169, ../src/_infographic.scss */
 #info .info-conversions {
   position: absolute;
   top: 550px;
+  background-image: url(../img/icon-info.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 140px;
 }
-/* line 173, ../src/_infographic.scss */
+/* line 178, ../src/_infographic.scss */
 #info .info-reporting {
   position: absolute;
   top: 950px;
+  background-image: url(../img/icon-info.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 140px;
 }
 
-/* line 180, ../src/_infographic.scss */
+/* line 189, ../src/_infographic.scss */
 .info-top-left {
   top: -71px;
   right: 100px;
 }
-/* line 183, ../src/_infographic.scss */
+/* line 192, ../src/_infographic.scss */
 .info-top-left:after {
   content: "";
   width: 0;
@@ -1018,12 +1027,12 @@ table {
   /* Safari and Chrome */
 }
 
-/* line 201, ../src/_infographic.scss */
+/* line 210, ../src/_infographic.scss */
 .info-top-middle {
   top: -120px;
   left: 30px;
 }
-/* line 204, ../src/_infographic.scss */
+/* line 213, ../src/_infographic.scss */
 .info-top-middle:after {
   content: "";
   width: 0;
@@ -1036,12 +1045,12 @@ table {
   bottom: -19px;
 }
 
-/* line 218, ../src/_infographic.scss */
+/* line 227, ../src/_infographic.scss */
 .info-top-right {
   top: -71px;
   right: -44px;
 }
-/* line 221, ../src/_infographic.scss */
+/* line 230, ../src/_infographic.scss */
 .info-top-right:after {
   content: "";
   width: 0;
@@ -1059,12 +1068,12 @@ table {
   /* Safari and Chrome */
 }
 
-/* line 236, ../src/_infographic.scss */
+/* line 245, ../src/_infographic.scss */
 .info-bottom-left {
   top: 131px;
   right: 100px;
 }
-/* line 239, ../src/_infographic.scss */
+/* line 248, ../src/_infographic.scss */
 .info-bottom-left:after {
   content: "";
   width: 0;
@@ -1082,12 +1091,12 @@ table {
   /* Safari and Chrome */
 }
 
-/* line 255, ../src/_infographic.scss */
+/* line 264, ../src/_infographic.scss */
 .info-bottom-middle {
   top: 175px;
   left: 28px;
 }
-/* line 258, ../src/_infographic.scss */
+/* line 267, ../src/_infographic.scss */
 .info-bottom-middle:after {
   content: "";
   width: 0;
@@ -1100,12 +1109,12 @@ table {
   top: -23px;
 }
 
-/* line 272, ../src/_infographic.scss */
+/* line 281, ../src/_infographic.scss */
 .info-bottom-right {
   top: 134px;
   right: -44px;
 }
-/* line 276, ../src/_infographic.scss */
+/* line 285, ../src/_infographic.scss */
 .info-bottom-right:after {
   content: "";
   width: 0;
@@ -1123,7 +1132,7 @@ table {
   /* Safari and Chrome */
 }
 
-/* line 297, ../src/_infographic.scss */
+/* line 306, ../src/_infographic.scss */
 .info-leads a:before,
 .info-conversions a:before,
 .info-reporting a:before {
@@ -1131,14 +1140,14 @@ table {
   content: " ";
   width: 0px;
   height: 0px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
   position: absolute;
   top: 65px;
   left: 65px;
   z-index: -10;
   border-radius: 100%;
 }
-/* line 312, ../src/_infographic.scss */
+/* line 321, ../src/_infographic.scss */
 .info-leads a:hover:before,
 .info-conversions a:hover:before,
 .info-reporting a:hover:before {
@@ -1146,7 +1155,7 @@ table {
   content: " ";
   width: 130px;
   height: 130px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
   top: 0px;
   left: 0px;
   z-index: -10;
