@@ -1,4 +1,4 @@
-$background-color: #eaeaea;
+$background-color: #efefef;
 
 $brand-color: #e54e27;
 
@@ -55,6 +55,9 @@ $padding: 22px;
 }
 
 @mixin bp($point) {
+  @if $point == mid-mob {
+    @media (min-width: 46em) { @content; }
+  }
   @if $point == non-mob {
     @media (min-width: 54em) { @content; }
   }

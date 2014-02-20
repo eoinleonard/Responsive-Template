@@ -50,3 +50,69 @@
 .container {
     zoom:1; /* For IE 6/7 (trigger hasLayout) */
 }
+
+
+@media screen and (max-width: 40em) {
+
+.container .col.one         {   width: 25%;   }
+.container .col.two         {   width: 50%;   } 
+.container .col.three,   
+.container .col.four,      
+.container .col.five,      
+.container .col.six,       
+.container .col.seven,     
+.container .col.eight,    
+.container .col.nine,      
+.container .col.ten,       
+.container .col.eleven,    
+.container .col.twelve,    
+.container .col.thirteen,  
+.container .col.fourteen,  
+.container .col.fifteen,   
+.container .col.sixteen     {   width: 100%;    }
+
+}
+
+
+@media screen and (min-width: 46em) {
+
+
+.container .col.one       {   width: 6.25%;   }
+.container .col.two       {   width: 12.5%;   }  
+.container .col.three     {   width: 18.75%;  }
+.container .col.four      {   width: 25%;     }
+.container .col.five      {   width: 31.25%;  }
+.container .col.six       {   width: 37.5% ;  }
+.container .col.seven     {   width: 43.75%   }
+.container .col.eight     {   width: 50%;     }
+.container .col.nine      {   width: 56.25%;  }
+.container .col.ten       {   width: 62.5%;   }
+.container .col.eleven    {   width: 68.75%;  }
+.container .col.twelve    {   width: 75%;     }
+.container .col.thirteen  {   width: 81.25%;  }
+.container .col.fourteen  {   width: 87.5%;   }
+.container .col.fifteen   {   width: 93.75%;  }
+.container .col.sixteen   {   width: 100%;    }
+
+
+.push-one       {   margin-left: 6.25%;   }
+.push-two       {   margin-left: 12.5%;   }  
+.push-three     {   margin-left: 18.75%;  }
+.push-four      {   margin-left: 25%;     }
+.push-five      {   margin-left: 31.25%;  }
+.push-six       {   margin-left: 37.5% ;  }
+.push-seven     {   margin-left: 43.75%   }
+.push-eight     {   margin-left: 50%;     }
+.push-nine      {   margin-left: 56.25%;  }
+.push-ten       {   margin-left: 62.5%;   }
+.push-eleven    {   margin-left: 68.75%;  }
+.push-twelve    {   margin-left: 75%;     }
+.push-thirteen  {   margin-left: 81.25%;  }
+.push-fourteen  {   margin-left: 87.5%;   }
+.push-fifteen   {   margin-left: 93.75%;  }
+
+ 
+.container .col:last-child {
+padding: 0;
+}
+}

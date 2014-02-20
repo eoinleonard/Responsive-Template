@@ -231,6 +231,17 @@ body {
     }
 }
 
+#overview img,
+.page-icon {
+    width: 40px;
+    height: auto;
+    display: block;
+    opacity: 0.235;
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+
+
 
 footer[role="contentinfo"] {
     background: #ddd;

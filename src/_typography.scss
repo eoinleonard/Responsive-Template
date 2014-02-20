@@ -95,3 +95,64 @@ p {
     	
 } //nav
 
+#overview, #summary {
+    text-align: center;
+            @include bp(mid-mob) {
+                text-align: left;
+            }
+        h3 {
+            color: #333;
+            font-size: 36px;
+            line-height: 1.1em;
+            letter-spacing: -0.055em;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: $padding * 2;
+            @include bp(mid-mob) {
+                text-align: center;
+            }
+
+        }
+        h4 {
+            font-size: 20px;
+                @include bp(mid-mob) {
+                    margin-left: $padding*3;
+                    margin-bottom: 4px;
+            }
+        }
+
+        h4,
+        p {
+                @include bp(mid-mob) {
+                 
+                    margin-top: 0;
+                    margin-right: 44px;
+                    margin-left: 66px;
+            }
+
+        }
+       
+        hr {
+            width: 50%;
+            border: 0;
+            height: 1px;
+            background-color: #ccc;
+            margin-bottom: $padding* 2;
+                @include bp(mid-mob){
+                        margin-bottom: 0;
+                        height: 0;
+                        width: 0;
+                }
+           
+        }
+        img {
+                @include bp(mid-mob) {
+                    position: absolute;
+
+            }
+
+        }
+    
+
+}
+
