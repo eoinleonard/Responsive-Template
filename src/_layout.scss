@@ -30,6 +30,7 @@
 
 
 .box, .box-nosidebar {
+    position: relative;
 	width: 100%;
 	background-color: white;
     margin-bottom: $padding;

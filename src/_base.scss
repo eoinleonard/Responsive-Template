@@ -233,9 +233,19 @@ body {
     width: 40px;
     height: auto;
     display: block;
-    
     margin: 0 auto;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+        @include bp(non-mob) {
+            width: 46px;
+
+        }
+}
+
+.page-icon {
+    @include bp(non-mob) {
+        position: absolute;
+
+    }
 }
 
 

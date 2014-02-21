@@ -8,6 +8,9 @@ h1, h2, h3, h4, h5, h6 {
 	color: $brand-color;
 	line-height: 1.2em;
 }
+h4 {
+	text-transform: uppercase;
+}
 
 a {
 	text-decoration: none;
@@ -189,4 +192,83 @@ p {
     
 
 }
+
+.page-content h1,
+.box-nosidebar h1 {
+	text-align: center;
+	line-height: 50px;
+	margin-bottom: $padding/2;
+		@include bp(non-mob) {
+			text-align: left;
+		}
+}
+
+///////  BLOG POSTS
+
+.page-content {
+
+	h1 {
+		
+		font-size: 28px;
+		line-height: 1.1em;
+		padding-bottom: 8px;
+			@include bp(tiny-mob){
+				font-size: 36px;
+				line-height: 1.1em;
+			}
+	}
+	h2,
+	h3,
+	h4 {
+		padding: 6px 0 8px 0;
+	}
+
+	p {
+		@include bp(mid-mob){
+			font-size: 18px;
+			line-height: 1.5em;
+		}
+	}
+	
+	a {
+			color: $link-color;
+				&:hover,
+				&:active {
+					text-decoration: underline;
+				}
+
+				&:active {
+					color: darken($link-color, 10%);
+				}
+		}
+
+		.full-post {
+			h1 {
+				text-align: left;
+			}
+					.post-meta {
+				color: #bababa;
+				font-weight: bold;
+				margin-bottom: $padding*1.5;
+					a {
+					color: #bababa;
+					padding-right: 6px;
+					text-decoration: underline;
+						&:hover,
+						&:active {
+							color: $link-color;
+						}
+
+						&:active {
+							color: darken($link-color, 10%);
+						}
+				}
+			}
+
+		}
+
+	
+	
+}
+
 
