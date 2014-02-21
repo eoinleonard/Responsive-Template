@@ -10,6 +10,11 @@
   		@include bp(tiny-mob) {
 	   		height: 630px;
 	   	}
+	   	@include bp(info-right) {
+	   		display: inline-block;
+	   		width: 540px;
+	   		float: right;
+	   	}
   	#info-full{
 	  width: 140px;
 	  margin: 0 auto;
@@ -350,7 +355,7 @@
 				&:before {
 					  		transition: none;
 			  				
-			  				background-color: rgba(0, 0, 0, 0.2);
+			  				background-color: rgba(0, 0, 0, 0.1);
 			  				
 					
 						}
@@ -360,7 +365,103 @@
 
 
 
+.sidebar #info {
+  float: none;
+  width: 100%;
+  height: 1020px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+  position: relative;
+  	@include bp(inBetween) {
+			height: 570px;
+	  			
+		
+	  }
+   	#info-full{
+	  width: 140px;
+	  margin: 0 auto;
+	  padding: 0 0  0;
+	  position: relative;
+	  z-index: 0;
+	  display: inline-block;
+	  	
+	  	
+	  	&:after {
+	  		content: "";
+		    width: 0px;
+		    height: 1000px;
+		    position: absolute;
+		    top:60px;
+		    right:58px;
+		    background-color: transparent;
+		    border: 13px solid #555;
+		    border-radius: 0;
+		    z-index: -1;
 
+
+	  	}
+	  	@include bp(inBetween) {
+			width: 460px;
+	  			&:after {
+			  		  position: absolute;
+					  top:80px;
+					  right:52px;
+					  content: "";
+					  width: 300px;
+					  height: 300px;
+					  position: absolute;
+
+					  background-color: transparent;
+					  border: 25px solid #555;
+					  border-radius: 100%;
+					  z-index: -1;
+			  	}
+		}
+	  }
+ 
+
+	@include bp(non-mob) {
+	.info-leads{
+	  position: absolute;
+	  top: 140px;
+	  background-image: url(../img/icon-info.svg);
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  background-size: 140px;
+
+	}
+	.info-conversions{
+	  position: absolute;
+	  top: 550px;
+	  background-image: url(../img/icon-info.svg);
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  background-size: 140px;
+
+	  
+	  
+	}
+	.info-reporting {
+	  position: absolute;
+	  top: 950px;
+	  background-image: url(../img/icon-info.svg);
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  background-size: 140px;
+	  right: 0;
+	  
+		}
+	}
+	@include bp(inBetween) {
+		.info-leads{
+	  
+
+	}
+}
+
+}
 
 
 

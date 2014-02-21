@@ -85,7 +85,31 @@
 }
 
 
+.intro {
+    margin-top: $padding;
+        @include bp(info-right) {
+                width: 35%;
+                float: left;
+                margin-top: $padding*4;
+            }
+    h2 {
+        margin-bottom: $padding; 
+            @include bp(info-right) {
+                margin-bottom: $padding*1.5;
+            }
+    }
+    p {
+        margin: 0 5%;
+        @include bp(tiny-mob) {
+                    margin: 0 10%;
+                }
+            @include bp(info-right) {
+                text-align: left;
+                margin: 0;    
+            }
+    }
 
+}
 
 
 

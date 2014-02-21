@@ -58,16 +58,22 @@ $padding: 22px;
   @if $point == tiny-mob {
     @media (min-width: 34em) { @content; }
   }
-  @if $point == mid-mob {
+  @else if $point == mid-mob {
     @media (min-width: 46em) { @content; }
   }
-  @if $point == non-mob {
+  @else if $point == non-mob {
     @media (min-width: 54em) { @content; }
+  }
+   @else if $point == info-right {
+    @media (min-width: 58em) { @content; }
   }
   @else if $point == mama-bear {
     @media (min-width: 72em) { @content; }
   }
   @else if $point == papa-bear {
     @media (min-width: 88em)  { @content; }
+  }
+  @else if $point == inBetween {
+    @media (min-width: 34em) and (max-width: 54em ){ @content; }
   }
 }
