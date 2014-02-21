@@ -7,6 +7,9 @@
   display: block;
   text-align: center;
   position: relative;
+  		@include bp(tiny-mob) {
+	   		height: 630px;
+	   	}
   	#info-full{
 	  width: 140px;
 	  margin: 0 auto;
@@ -21,9 +24,9 @@
 		    height: 1000px;
 		    position: absolute;
 		    top:60px;
-		    right:59px;
+		    right:58px;
 		    background-color: transparent;
-		    border: 12px solid #555;
+		    border: 13px solid #555;
 		    border-radius: 0;
 		    z-index: -1;
 
@@ -152,7 +155,7 @@
 	#info .info-conversions a, 
 	  #info .info-reporting a {
 		  padding-bottom: 10px;
-		  color: #eaeaea;
+		  
 		}
 }
 
@@ -173,6 +176,11 @@
 	  background-repeat: no-repeat;
 	  background-position: center center;
 	  background-size: 140px;
+	   	@include bp(tiny-mob) {
+	   		position: absolute;
+	  		top: 140px;
+	  		right: 0;
+	   	}
 	  
 	}
 	.info-reporting {
@@ -182,6 +190,11 @@
 	  background-repeat: no-repeat;
 	  background-position: center center;
 	  background-size: 140px;
+	  	@include bp(tiny-mob) {
+	   		position: absolute;
+	  		top: 360px;
+	  		right: 160px;
+	   	}
 	  
 	}
 
@@ -308,7 +321,7 @@
 			  				content: " ";
 			  				width: 0px;
 			  				height: 0px;
-			  				background-color: rgba(0, 0, 0, 0.05);
+			  				background-color: rgba(255, 255, 255, 0.05);
 			  				position: absolute;
 			  				top: 65px;
 			  				left: 65px;
@@ -323,11 +336,22 @@
 			  				content: " ";
 			  				width: 130px;
 			  				height: 130px;
-			  				background-color: rgba(0, 0, 0, 0.05);
+			  				background-color: rgba(255, 255, 255, 0.1);
 			  				top: 0px;
 			  				left: 0px;
 			  				z-index: -10;
 			  				border-radius: 100%;
+					
+						}
+			
+		}
+		&:active {
+			
+				&:before {
+					  		transition: none;
+			  				
+			  				background-color: rgba(0, 0, 0, 0.2);
+			  				
 					
 						}
 			
