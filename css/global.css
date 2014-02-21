@@ -805,7 +805,7 @@ p a:active {
   /* line 65, ../src/_layout.scss */
   .box .sidebar {
     display: table-cell;
-    min-width: 200px;
+    min-width: 240px;
   }
 }
 
@@ -1470,12 +1470,7 @@ p a:active {
 .sidebar #info {
   float: none;
   width: 100%;
-  height: 1020px;
-  margin: 0;
-  padding: 0;
-  display: block;
-  text-align: center;
-  position: relative;
+  height: 880px;
 }
 @media (min-width: 34em) and (max-width: 54em) {
   /* line 368, ../src/_infographic.scss */
@@ -1483,34 +1478,28 @@ p a:active {
     height: 570px;
   }
 }
-/* line 382, ../src/_infographic.scss */
+/* line 378, ../src/_infographic.scss */
 .sidebar #info #info-full {
   width: 140px;
-  margin: 0 auto;
-  padding: 0 0  0;
-  position: relative;
-  z-index: 0;
-  display: inline-block;
 }
-/* line 391, ../src/_infographic.scss */
+/* line 383, ../src/_infographic.scss */
 .sidebar #info #info-full:after {
   content: "";
   width: 0px;
-  height: 1000px;
-  position: absolute;
+  height: 660px;
   top: 60px;
-  right: 58px;
+  margin: auto;
   background-color: transparent;
   border: 13px solid #555;
   border-radius: 0;
   z-index: -1;
 }
 @media (min-width: 34em) and (max-width: 54em) {
-  /* line 382, ../src/_infographic.scss */
+  /* line 378, ../src/_infographic.scss */
   .sidebar #info #info-full {
     width: 460px;
   }
-  /* line 407, ../src/_infographic.scss */
+  /* line 397, ../src/_infographic.scss */
   .sidebar #info #info-full:after {
     position: absolute;
     top: 80px;
@@ -1526,33 +1515,93 @@ p a:active {
   }
 }
 @media (min-width: 54em) {
-  /* line 426, ../src/_infographic.scss */
+  /* line 415, ../src/_infographic.scss */
   .sidebar #info .info-leads {
     position: absolute;
     top: 140px;
-    background-image: url(../img/icon-info.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 140px;
   }
-  /* line 435, ../src/_infographic.scss */
+  /* line 420, ../src/_infographic.scss */
   .sidebar #info .info-conversions {
     position: absolute;
     top: 550px;
-    background-image: url(../img/icon-info.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 140px;
   }
-  /* line 446, ../src/_infographic.scss */
+  /* line 425, ../src/_infographic.scss */
   .sidebar #info .info-reporting {
     position: absolute;
     top: 950px;
-    background-image: url(../img/icon-info.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 140px;
     right: 0;
+  }
+}
+
+/* line 437, ../src/_infographic.scss */
+.sidebar #info .dormant {
+  background-color: #ddd;
+}
+
+/* line 443, ../src/_infographic.scss */
+#info .info-leads.dormant {
+  position: absolute;
+  top: 30px;
+}
+/* line 450, ../src/_infographic.scss */
+#info .info-conversions.dormant {
+  position: absolute;
+  top: 320px;
+}
+/* line 456, ../src/_infographic.scss */
+#info .info-conversions.info-active {
+  position: absolute;
+  top: 410px;
+}
+/* line 462, ../src/_infographic.scss */
+#info .info-reporting.info-active {
+  position: absolute;
+  top: 610px;
+}
+/* line 472, ../src/_infographic.scss */
+#info .info-leads.dormant a,
+#info .info-conversions.dormant a,
+#info .info-reporting.dormant a {
+  color: #828282;
+}
+/* line 475, ../src/_infographic.scss */
+#info .info-leads.dormant:hover,
+#info .info-conversions.dormant:hover,
+#info .info-reporting.dormant:hover {
+  background-color: #e54e27;
+}
+/* line 477, ../src/_infographic.scss */
+#info .info-leads.dormant:hover a,
+#info .info-conversions.dormant:hover a,
+#info .info-reporting.dormant:hover a {
+  color: #e8e8e8;
+}
+/* line 483, ../src/_infographic.scss */
+#info .info-reporting.dormant {
+  position: absolute;
+  top: 720px;
+}
+@media (min-width: 34em) and (max-width: 54em) {
+  /* line 489, ../src/_infographic.scss */
+  #info .info-leads.info-active,
+  #info .info-leads.dormant {
+    position: absolute;
+    top: 140px;
+    left: 0;
+  }
+  /* line 495, ../src/_infographic.scss */
+  #info .info-conversions.dormant,
+  #info .info-conversions.info-active {
+    position: absolute;
+    top: 140px;
+    right: 0;
+  }
+  /* line 502, ../src/_infographic.scss */
+  #info .info-reporting.info-active,
+  #info .info-reporting.dormant {
+    position: absolute;
+    top: 360px;
+    right: 160px;
   }
 }
 
@@ -1829,7 +1878,6 @@ body * {
   width: 40px;
   height: auto;
   display: block;
-  opacity: 0.235;
   margin: 0 auto;
   margin-bottom: 12px;
 }
