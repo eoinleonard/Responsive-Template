@@ -15,6 +15,9 @@
 	   		width: 540px;
 	   		float: right;
 	   	}
+	   	@include bp(mama-bear) {
+                margin-right: $padding*3;
+            }
   	#info-full{
 	  width: 140px;
 	  margin: 0 auto;

@@ -20,8 +20,9 @@ body {
     width: 100%;
     min-width: pem(320);
     background: $background-color;
+   
 
-        //bg colour on body//
+        
         img {
             border: none;
             max-width: 100%;
@@ -34,7 +35,10 @@ body {
         }
 
 
+
 }
+
+
 
 .stripe-grey {
     background-color: $bread-bg;
@@ -143,6 +147,9 @@ body {
                 float: right;
                 
         }
+        @include bp(mama-bear) {
+        margin-right: $padding*3;
+        }
     .close-btn {
         display: none;
          @include bp(non-mob) {
@@ -196,10 +203,16 @@ body {
         width: 200px;          //width of main logo in header//
         display: inline-block;
         float: left;
+        margin-left: $padding;
         .nav-btn {
             @include visuallyhidden;
         }
-    }
+    @include bp(mama-bear) {
+        margin-left: $padding*3;
+        }
+       
+}
+
 
     .block-title {
         margin: 0;
@@ -209,6 +222,7 @@ body {
         white-space: nowrap;
             @include bp(non-mob){
                 text-align: left;
+
             }
             img {
                 width: 200px;
@@ -249,19 +263,8 @@ body {
     }
 }
 
-/// Blog home page
 
-.post {
-    position: relative;
-    padding-top: $padding;
-    img {
-        border-radius: 100%;
-        width: 66px;
-        position:absolute;
-        top: $padding;
-        right: 0;
-    }
-}
+  
 
 footer[role="contentinfo"] {
     background: #ddd;

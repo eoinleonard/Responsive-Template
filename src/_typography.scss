@@ -197,13 +197,20 @@ p {
 .page-content h1,
 .box-nosidebar h1 {
 	text-align: center;
-	line-height: 50px;
+	
 	margin-bottom: $padding/2;
 		@include bp(non-mob) {
 			text-align: left;
+			
 		}
 }
 
+.box-nosidebar h1 {
+		@include bp(non-mob) {
+			margin-left: $padding*3;
+			
+		}
+}
 ///////  Page with sidebar - white content area
 
 .page-content {
@@ -280,7 +287,17 @@ p {
     	font-size: 18px;
     	margin-right: 74px;
     	padding-bottom: 4px;
-    	
+    		@include bp(tiny-mob) {
+    			font-size: 24px;
+    			margin-right: 100px;
+    			padding-bottom: 8px;
+    		}
+    		@include bp(mid-mob) {
+    			font-size: 30px;
+    			margin-right: 140px;
+    			padding-bottom: 16px;
+    		}
+
     }
     a {
     	color: #414142;
@@ -291,6 +308,14 @@ p {
     .post-meta {
     	color: #a9aaaa;
     	font-weight: bold;
+    	margin-bottom: 8px;
+    		@include bp(tiny-mob) {
+    			margin-bottom: 12px;
+    		}
+    		@include bp(mid-mob) {
+    			font-size: 18px;
+    			margin-bottom: 16px;
+    		}
     	a {
     		color: $link-color;
     		&:hover {
@@ -303,4 +328,6 @@ p {
     }
     
 }
+
+
 
