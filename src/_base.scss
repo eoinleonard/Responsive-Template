@@ -39,6 +39,7 @@ body {
 .stripe-grey {
     background-color: $bread-bg;
     border-top: 1px solid #303030;
+    margin-top: 0px;
 }
 .stripe-mid-grey {
     background-color: #444444;
@@ -248,7 +249,19 @@ body {
     }
 }
 
+/// Blog home page
 
+.post {
+    position: relative;
+    padding-top: $padding;
+    img {
+        border-radius: 100%;
+        width: 66px;
+        position:absolute;
+        top: $padding;
+        right: 0;
+    }
+}
 
 footer[role="contentinfo"] {
     background: #ddd;

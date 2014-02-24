@@ -2,6 +2,7 @@ body {
 	color: #333;
 	font-family: 'Ubuntu', sans-serif;
 	-webkit-font-smoothing: antialiased;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -203,7 +204,7 @@ p {
 		}
 }
 
-///////  BLOG POSTS
+///////  Page with sidebar - white content area
 
 .page-content {
 
@@ -271,4 +272,35 @@ p {
 	
 }
 
+
+///Blog home page
+
+.post {
+    h2 {
+    	font-size: 18px;
+    	margin-right: 74px;
+    	padding-bottom: 4px;
+    	
+    }
+    a {
+    	color: #414142;
+    	&:hover {
+    	color: #e54e27;
+    }
+    }
+    .post-meta {
+    	color: #a9aaaa;
+    	font-weight: bold;
+    	a {
+    		color: $link-color;
+    		&:hover {
+							text-decoration: underline;
+						}
+    		&:active {
+							color: darken($link-color, 10%);
+						}
+    	}
+    }
+    
+}
 

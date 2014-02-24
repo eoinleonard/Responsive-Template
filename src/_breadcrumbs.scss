@@ -35,7 +35,8 @@
         background: none repeat scroll 0 0 ;
         width: 100%;
         @include bp(non-mob) {
-            margin-left: 16px
+            margin-left: 16px;
+            
         }
     ul,
     a,
