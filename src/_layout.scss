@@ -162,11 +162,24 @@
     @include bp(mid-mob) {
                 margin-top: $padding*1.2;
                 padding-bottom: $padding*1.2;
+               
             }
             @include bp(non-mob) {
                 
                 margin: $padding*1.2 $padding*3 0 $padding*3;
             }
+    .table {
+        @include bp(mid-mob) {
+                
+                display: table;
+            }
+    }
+     .table-left {
+        @include bp(mid-mob) {
+                vertical-align: top;
+                display: table-cell;
+            }
+    }
     img {
         border-radius: 100%;
         width: 66px;
@@ -178,7 +191,10 @@
                 width: 90px;
             }
             @include bp(mid-mob) {
-                width: 120px;
+                min-width: 180px;
+                position: static;
+                display: table-cell;
+
             }
     }
     

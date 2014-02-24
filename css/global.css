@@ -827,47 +827,47 @@ p a:active {
 @media (min-width: 46em) {
   /* line 286, ../src/_typography.scss */
   .post h2 {
-    font-size: 30px;
-    margin-right: 140px;
+    font-size: 28px;
+    margin-right: 0;
     padding-bottom: 16px;
   }
 }
-/* line 302, ../src/_typography.scss */
+/* line 304, ../src/_typography.scss */
 .post a {
   color: #414142;
 }
-/* line 304, ../src/_typography.scss */
+/* line 306, ../src/_typography.scss */
 .post a:hover {
   color: #e54e27;
 }
-/* line 308, ../src/_typography.scss */
+/* line 310, ../src/_typography.scss */
 .post .post-meta {
   color: #a9aaaa;
   font-weight: bold;
   margin-bottom: 8px;
 }
 @media (min-width: 34em) {
-  /* line 308, ../src/_typography.scss */
+  /* line 310, ../src/_typography.scss */
   .post .post-meta {
     margin-bottom: 12px;
   }
 }
 @media (min-width: 46em) {
-  /* line 308, ../src/_typography.scss */
+  /* line 310, ../src/_typography.scss */
   .post .post-meta {
     font-size: 18px;
     margin-bottom: 16px;
   }
 }
-/* line 319, ../src/_typography.scss */
+/* line 321, ../src/_typography.scss */
 .post .post-meta a {
   color: #36aeda;
 }
-/* line 321, ../src/_typography.scss */
+/* line 323, ../src/_typography.scss */
 .post .post-meta a:hover {
   text-decoration: underline;
 }
-/* line 324, ../src/_typography.scss */
+/* line 326, ../src/_typography.scss */
 .post .post-meta a:active {
   color: #2292bb;
 }
@@ -1099,7 +1099,20 @@ p a:active {
     margin: 26.4px 66px 0 66px;
   }
 }
-/* line 170, ../src/_layout.scss */
+@media (min-width: 46em) {
+  /* line 171, ../src/_layout.scss */
+  .post .table {
+    display: table;
+  }
+}
+@media (min-width: 46em) {
+  /* line 177, ../src/_layout.scss */
+  .post .table-left {
+    vertical-align: top;
+    display: table-cell;
+  }
+}
+/* line 183, ../src/_layout.scss */
 .post img {
   border-radius: 100%;
   width: 66px;
@@ -1108,15 +1121,17 @@ p a:active {
   right: 0;
 }
 @media (min-width: 34em) {
-  /* line 170, ../src/_layout.scss */
+  /* line 183, ../src/_layout.scss */
   .post img {
     width: 90px;
   }
 }
 @media (min-width: 46em) {
-  /* line 170, ../src/_layout.scss */
+  /* line 183, ../src/_layout.scss */
   .post img {
-    width: 120px;
+    min-width: 180px;
+    position: static;
+    display: table-cell;
   }
 }
 
