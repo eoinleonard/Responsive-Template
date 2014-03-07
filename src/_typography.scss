@@ -118,7 +118,7 @@ p {
 			}
 	}
 	p {
-		margin: 0 5%;
+		
 		line-height: 1.675em;
 		color: #e8e8e8;
 		text-align: center;
@@ -284,33 +284,44 @@ p {
 
 .post {
     h2 {
-    	font-size: 18px;
+    	font-size: 19px;
     	margin-right: 74px;
-    	padding-bottom: 4px;
+    	padding-bottom: 6px;
     		@include bp(tiny-mob) {
     			font-size: 24px;
     			margin-right: 100px;
     			padding-bottom: 8px;
     		}
     		@include bp(mid-mob) {
-    			font-size: 28px;
-    			margin-right: 0;
-    			padding-bottom: 16px;
-    			
+    			font-size: 29px;
+    			margin-right: 134px;
+    			padding-bottom: 22px;
+
+    		}
+    		@include bp(non-mob) {
+    			font-size: 36px;
+    			margin-right: 134px;
+    			padding-bottom: 12px;
 
     		}
 
     }
     a {
     	color: #414142;
-    	&:hover {
-    	color: #e54e27;
+	    	&:hover {
+	    	color: #e54e27;
+	    }
+
     }
+    p {
+    	font-size: 16px;
+    	line-height: 1.4em;
     }
     .post-meta {
     	color: #a9aaaa;
+    	font-size: 13px;
     	font-weight: bold;
-    	margin-bottom: 8px;
+    	margin-bottom: 7px;
     		@include bp(tiny-mob) {
     			margin-bottom: 12px;
     		}
