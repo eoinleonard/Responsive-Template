@@ -124,13 +124,14 @@
     margin-top: $padding;
     clear: left;
         @include bp(info-right) {
-                width: 35%;
+                width: 31%;
                 float: left;
                 margin-top: $padding*4;
                 margin-left: $padding;
             }
             @include bp(mama-bear) {
                 margin-left: $padding*3;
+                width: 34%;
             }
 
     h2 {

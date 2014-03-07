@@ -20,7 +20,7 @@ body {
     width: 100%;
     min-width: pem(320);
     background: $background-color;
-   
+    -webkit-font-smoothing: antialiased;
 
         
         img {
@@ -38,7 +38,60 @@ body {
 
 }
 
+.button,
+ {
+    padding: 14px 36px;
+    border: none;
+    border-bottom: 6px solid rgba(0, 0, 0, 0.2);
+    -webkit-appearance: none;
+    -webkit-border-radius:0; 
+    border-radius:0;
+    background-color: #e8e8e8;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+        @include bp(tiny-mob) {
+            margin: auto;
+            width: 260px;
+        }
+}
+input[type="submit"].button {
+    @include bp(tiny-mob) {
+           margin: 0 0 0 5%;;
+            width: 260px;
+        }
 
+}
+
+.blue {
+    color: white;
+  background-color: #3f92bc!important;
+    a {
+        color: white;
+    }
+    &:hover {
+        background-color: lighten(#3f92bc, 5%) !important;
+    }
+    &:active {
+        background-color: darken(#3f92bc, 3%) !important;
+    }
+  
+}
+.orange {
+    color: white;
+  background-color: #e54e27!important;
+    a {
+        color: white;
+    }
+    &:hover {
+        background-color: lighten(#e54e27, 3%)!important;
+    }
+    &:active {
+        background-color: darken(#e54e27, 3%)!important;
+    }
+  
+}
 
 .stripe-grey {
     background-color: $bread-bg;
@@ -47,6 +100,7 @@ body {
 }
 .stripe-mid-grey {
     background-color: #444444;
+    padding: 8px 0 14px 0;
 }
 
 .block {
@@ -264,7 +318,58 @@ body {
 }
 
 
-  
+.contact-form {
+    margin-bottom: 10px;
+         @include bp(tiny-mob) {
+                width: 80%;
+               margin: auto;
+
+            }
+    color: #686868;
+        input,
+        textarea,
+        label {
+            display: block;
+            margin: auto;
+            width: 90%;
+
+        }
+        input:not([type=submit]),
+        textarea {
+            background-color: #eaeaea;
+            padding: 12px 14px;
+            margin-bottom: 12px;
+            border: none;
+            color: #333;
+            -webkit-appearance: none;
+            -webkit-border-radius:0; 
+            border-radius:0;
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                    border-bottom: 4px solid #e54e27;
+                    margin-bottom: 8px;
+                }
+       
+        }
+        label  {
+            margin-bottom: 6px;
+        }
+     
+        input[type=submit] {
+            &:focus,
+            &:hover,
+            &:active {
+                box-shadow: none;
+                outline: none;
+                -webkit-appearance: none;
+                -webkit-border-radius:0; 
+                border-radius:0;
+            }
+        }
+        
+
+} 
 
 footer[role="contentinfo"] {
     background: #ddd;

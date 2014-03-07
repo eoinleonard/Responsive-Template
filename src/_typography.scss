@@ -331,5 +331,36 @@ p {
     
 }
 
+.full-post, .page-content {
+	p,
+	img,
+	ol,
+	ul  {
+		margin-bottom: 30px;
+	}
+	h2 {
+		margin-bottom: 3px;
+		@include bp(mid-mob){
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+	}
+	h3 {
 
+	}
+	h4 {
+		margin-bottom: 4px;
+	}
+	ol {
+		list-style: disc;
+		margin-left: 18px;
+		line-height: 1.4em;
+			@include bp(mid-mob) {
+				margin-left: 0;
+			}
+		 li {
+		 	margin-bottom: 18px;
+		 }
+	}
+}
 
