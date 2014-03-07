@@ -333,16 +333,16 @@ p {
 
 .full-post, .page-content {
 	p,
-	img,
+	img:not(.page-icon),
 	ol,
 	ul  {
-		margin-bottom: 30px;
+		margin-bottom: 22px;
 	}
 	h2 {
 		margin-bottom: 3px;
 		@include bp(mid-mob){
 			font-size: 30px;
-			margin-bottom: 20px;
+			margin-bottom: 8px;
 		}
 	}
 	h3 {
