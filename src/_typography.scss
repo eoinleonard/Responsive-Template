@@ -47,7 +47,7 @@ p {
 		    	li {
 
 		    		a {
-		    		color: #e8e8e8;					//font colour of open mobile nav
+		    		color: #c6c6c6;					//font colour of open mobile nav
 		    		font-size: 14px;             //font-size of items on "revealed" mobile nav
 		             
 		            font-weight: bold;
@@ -286,19 +286,13 @@ p {
 		.full-post {
 			h1 {
 				text-align: left;
-				@include bp (tiny-mob){
-					margin-bottom: 33px;
-				}
-					@include bp(non-mob) {
-		    			
-		    			
-
+				margin-bottom: 26px;
+			
+					@include bp(tiny-mob) {
+		    			margin-bottom: 33px;
 		    		}
 		    		@include bp(mama-bear) {
 		    			font-size: 38px;
-		    		
-		    			
-
 		    		}
 			}
 					.post-meta {
@@ -332,7 +326,7 @@ p {
 .post {
     h2 {
     	font-size: 17px;
-    	margin-right: 64px;
+    	margin-right: 62px;
     	padding-bottom: 6px;
     		@include bp(tiny-mob) {
     			font-size: 24px;

@@ -442,7 +442,7 @@ a {
                 
         }
         @include bp(mama-bear) {
-        margin-right: $padding*3;
+        margin-right: $padding;
         }
     .close-btn {
         display: none;
@@ -476,6 +476,10 @@ a {
         @include bp(non-mob){
             display: inline-block;
             margin-left: 10px;
+
+        }
+        @include bp(mama-bear) {
+             margin-left: 18px;
         }
 
         a {

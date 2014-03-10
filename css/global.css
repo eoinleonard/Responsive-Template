@@ -460,7 +460,7 @@ p a:active {
   }
 }
 #nav ul li a {
-  color: #e8e8e8;
+  color: #c6c6c6;
   font-size: 14px;
   font-weight: bold;
   outline: none;
@@ -694,6 +694,7 @@ p a:active {
 }
 .page-content .full-post h1 {
   text-align: left;
+  margin-bottom: 26px;
 }
 @media (min-width: 34em) {
   .page-content .full-post h1 {
@@ -724,7 +725,7 @@ p a:active {
 
 .post h2 {
   font-size: 17px;
-  margin-right: 64px;
+  margin-right: 62px;
   padding-bottom: 6px;
 }
 @media (min-width: 34em) {
@@ -1940,7 +1941,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 }
 @media (min-width: 72em) {
   #nav {
-    margin-right: 66px;
+    margin-right: 22px;
   }
 }
 #nav .close-btn {
@@ -1996,6 +1997,11 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   #nav li {
     display: inline-block;
     margin-left: 10px;
+  }
+}
+@media (min-width: 72em) {
+  #nav li {
+    margin-left: 18px;
   }
 }
 #nav li a {
