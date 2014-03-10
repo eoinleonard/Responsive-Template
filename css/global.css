@@ -2273,6 +2273,76 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   }
 }
 
+#comment-container {
+  margin: 44px 0;
+  border-top: 1px solid #eee;
+  padding-top: 44px;
+}
+#comment-container .comment {
+  display: inline-block;
+}
+#comment-container .comment .comment-author .comment-img {
+  float: left;
+  width: 50px;
+  margin: 0;
+}
+#comment-container .comment .comment-author .author-name {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 22px;
+  height: 50px;
+  display: table-cell;
+  color: #5f6060;
+  padding: 0 0 0 10px;
+  vertical-align: middle;
+}
+#comment-container .comment .comment-text p {
+  font-size: 16px;
+  line-height: 1.5em;
+  clear: both;
+  padding: 0;
+}
+#comment-container .comment .datetime {
+  display: inline-block;
+  color: #a9aaaa;
+  margin: 12px 0 4px 0;
+}
+#comment-container ol {
+  list-style: none;
+  padding: 0;
+  margin-left: 0;
+}
+#comment-container ol li {
+  display: inline-block;
+  margin-bottom: 44px;
+}
+#comment-container .reply {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}
+#comment-container .reply a {
+  color: #e54e27;
+}
+#comment-container h3 {
+  font-size: 36px;
+  margin-bottom: 44px;
+  padding-top: 44px;
+  padding-left: 0;
+}
+#comment-container .comment-form-text {
+  width: 100%;
+  min-height: 100px;
+  display: block;
+  padding: 8px;
+  margin-bottom: 18px;
+}
+#comment-container .comment-form .button {
+  display: block;
+  width: 100%;
+  margin-bottom: 44px;
+}
+
 footer[role="contentinfo"] {
   background: #ddd;
 }

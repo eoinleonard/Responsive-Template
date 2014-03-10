@@ -786,6 +786,118 @@ a {
     }
 }
 
+#comment-container {
+  margin: 44px 0;
+  border-top: 1px solid #eee;
+  padding-top: 44px;
+    .comment {
+        display: inline-block;
+            .comment-author {
+
+                .comment-img {
+                    float: left;
+                    width: 50px;
+                    margin: 0;
+                }
+                .author-name {
+                    display: inline-block;
+                    font-weight: bold;
+                    font-size: 22px;
+                    height: 50px;
+                    display: table-cell;
+                    color: #5f6060;
+                    padding: 0 0 0 10px;
+                    vertical-align: middle
+                }
+            }
+            .comment-text {
+                 p {
+                    font-size: 16px;
+                    line-height: 1.5em;
+                    clear: both;
+                    padding: 0
+                 }
+            }
+            .datetime {
+                display: inline-block;
+                color: #a9aaaa;
+                margin: 12px 0 4px 0;
+            }
+    }
+    ol {
+        list-style: none;
+        padding: 0;
+        margin-left: 0;
+        li {
+             display: inline-block;
+             margin-bottom: 44px
+        }
+    }
+    .reply {
+        display: inline-block;
+        width: 100%;
+        text-align: right;
+
+         a {
+            color: #e54e27;
+         }
+    }
+    h3 {
+        font-size: 36px;
+        margin-bottom: 44px;
+        padding-top: 44px;
+        padding-left: 0;
+    }
+    .comment-form-text {
+        width: 100%;
+        min-height: 100px;
+        display: block;
+        padding: 8px;
+        margin-bottom: 18px;
+    }
+    .comment-form {
+        .button {
+            display: block;
+            width: 100%;
+            margin-bottom: 44px;
+        }
+    }
+
+}
+
 footer[role="contentinfo"] {
     background: #ddd;
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
