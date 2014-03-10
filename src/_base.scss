@@ -1,4 +1,27 @@
 
+body {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    background: $background-color;
+    -webkit-font-smoothing: antialiased;
+
+        
+        img {
+            border: none;
+            max-width: 100%;
+            height: auto;
+        }
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+
+
+}
+
 .container {
     display: block;
     width: 96%;
@@ -6,7 +29,7 @@
     
         @include bp(non-mob){
             width: 90%;
-            max-width: 1280px;
+            max-width: 1204px;
             margin:  auto;
         }
 }
@@ -19,7 +42,7 @@
         
 }
 
-.stripe-mid-grey, .bread {
+.stripe-mid-grey, .bread {  // breadcrumbs or homepage infographic
     margin-bottom: 16px;
         @include bp(mid-mob) {
                 margin-bottom: 22px;
@@ -30,7 +53,7 @@
 
 
 
-.box, .box-nosidebar {
+.box, .box-nosidebar {  // white box around main content on all pages
     position: relative;
     width: 100%;
     background-color: white;
@@ -45,7 +68,7 @@
              padding: 0 10%;
         }
         @include bp(non-mob){
-            padding: 0 $padding*1.5;
+            padding: 0 $padding;
         }
          @include bp(mama-bear) {
             padding: 0 $padding*3;
@@ -58,6 +81,10 @@
 .box-nosidebar, .page-content {
     padding-top: $padding*1.8;
     padding-bottom: $padding*1.8;
+      @include bp(tiny-mob) {
+            padding-top: $padding*2.5;
+        }
+       
 
 }
 
@@ -91,16 +118,17 @@
             ul,
             ol,
             .post-meta,
-            #comment-container{
+            #comment-container,
+            .contact-form {
                   padding: 0 5%;
                     @include bp(tiny-mob) {
                         padding: 0 10%;
                     }
                     @include bp(non-mob){
-                        padding: 0 $padding;
+                        padding: 0 $padding*3;
                     }
                     @include bp(mama-bear){
-                        padding: 0 $padding*4;
+                        
                     }
                 }
 
@@ -109,7 +137,7 @@
         .sidebar {
             width: 100%;
             background-color: $sidebar-bg;
-            padding: 32px 32px 0 32px;
+            padding: 32px 0 0 0;
                 img {
                     border-radius: 100%;
 
@@ -124,15 +152,31 @@
             
 }
 
-#overview {
-    @include bp(mid-mob) {
-        margin-bottom: 44px;
+.page-content {  // on a page with a sidebar - this is where the content goes
+    @include bp (non-mob) {
+
     }
+}
+ul, ol {
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
 }
 
 
 
-.intro {
+a {
+    
+}
+
+
+
+
+
+.intro {  // main tagline on homepage
     margin-top: $padding;
     clear: left;
         @include bp(info-right) {
@@ -165,10 +209,15 @@
 
 }
 
+#overview {
+    @include bp(mid-mob) {
+        margin-bottom: 44px;
+    }
+}
 
 /// Blog home page
 
-.post {
+.post {  // intros to blog posts on the blog page - not the full article
     position: relative;
     padding-top: $padding;
     border-bottom: 1px solid #ccc;
@@ -182,20 +231,23 @@
                 margin: $padding*1.2 $padding*3 0 $padding*3;
             }
     .table {
-        @include bp(mid-mob) {
-                
+        @include bp(mama-bear) {
+                width: 100%;
                 display: table;
             }
     }
      .table-left {
-        @include bp(mid-mob) {
-                vertical-align: top;
+        width: 100%;
+        @include bp(mama-bear) {
+               
                 display: table-cell;
+                 vertical-align: top;
+                
             }
     }
     img {
         border-radius: 100%;
-        width: 70px;
+        width: 62px;
         position:absolute;
         top: $padding;
         right: 0;
@@ -208,55 +260,23 @@
                
 
             }
+             @include bp(mama-bear) {
+                position: static;
+                display: table-cell;
+                min-width: 190px;
+               
+
+            }
     }
     
 
 }
 
-.page-content {
-    @include bp (non-mob) {
-
-    }
-}
-ul, ol {
-    padding: 0;
-    list-style: none;
-}
-
-h1, h2, h3, h4, h5, h6, p, ul, ol {
-    margin: 0;
-}
 
 
 
-a {
-    
-}
 
-body {
-    position: relative;
-    width: 100%;
-    min-width: pem(320);
-    background: $background-color;
-    -webkit-font-smoothing: antialiased;
-
-        
-        img {
-            border: none;
-            max-width: 100%;
-            height: auto;
-        }
-        * {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-
-
-
-}
-
-.button,
+.button 
  {
     padding: 14px 36px;
     border: none;
@@ -268,21 +288,23 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    display: inline-block;
+      
+
+
+
+}
+
+.block-button {
     display: block;
-        @include bp(tiny-mob) {
+      @include bp(tiny-mob) {
             margin: auto;
             width: 260px;
         }
 }
-input[type="submit"].button {
-    @include bp(tiny-mob) {
-           margin: 0 0 0 5%;;
-            width: 260px;
-        }
 
-}
 
-.blue {
+.blue {  // add the colour class for button
     color: white;
   background-color: #3f92bc!important;
     a {
@@ -316,7 +338,7 @@ input[type="submit"].button {
     border-top: 1px solid #303030;
     margin-top: 0px;
 }
-.stripe-mid-grey {
+.stripe-mid-grey { // banner below infographic with blue CTA
     background-color: #444444;
     padding: 8px 0 14px 0;
 }
@@ -396,13 +418,13 @@ input[type="submit"].button {
     }
 }
 
-#outer-wrap {
+#outer-wrap {  // from original template
     position: relative;
     overflow: hidden;
     width: 100%;
 }
 
-#inner-wrap {
+#inner-wrap { // from original template
     position: relative;
     width: 100%;
 }
@@ -464,7 +486,7 @@ input[type="submit"].button {
     }
 }
 
-// header[role="banner"] {
+
 #top {
     z-index: 100;
     position: relative;
@@ -486,7 +508,7 @@ input[type="submit"].button {
 }
 
 
-    .block-title {
+    .block-title { // logo in site header
         margin: 0;
         font-size: pem(30);
         line-height: pem(36, 30);
@@ -515,7 +537,7 @@ input[type="submit"].button {
     }
 }
 
-#overview img,
+#overview img,  // small grey icons next to headings
 .page-icon {
     width: 40px;
     height: auto;
@@ -523,7 +545,7 @@ input[type="submit"].button {
     margin: 0 auto;
     margin-bottom: 8px;
         @include bp(non-mob) {
-            width: 46px;
+            width: 42px;
 
         }
 }
@@ -539,17 +561,15 @@ input[type="submit"].button {
 .contact-form {
     margin-bottom: 10px;
          @include bp(tiny-mob) {
-                width: 80%;
-               margin: auto;
 
+        
             }
-    color: #686868;
+   
         input,
         textarea,
         label {
             display: block;
-            margin: auto;
-            width: 90%;
+           width: 100%;
 
         }
         input:not([type=submit]),
@@ -588,10 +608,179 @@ input[type="submit"].button {
             &:active {
                 background-color: darken(#e54e27, 5%)!important;
             }
-        }
+            &.button {
+                @include bp(tiny-mob) {
+                   display: inline-block;
+                    width: 260px;
+                }
         
 
+            }
+        }
+      
+        
+
+}
+
+.sidebar {
+    overflow: hidden;
+    .staff-member-intro
+    {
+
+        width: 200px;
+        margin: auto;
+        padding: 28px 0 44px 0;
+        text-align: center;
+        clear: both;
+        border-bottom: 1px solid #606060;
+             &:last-child {
+                        padding-bottom: 66px;
+                        border-bottom: 0;
+                    }
+
+        img {
+            padding: 12px;
+
+        }
+        h3 {
+            margin: 0 0 4px 0;
+            color: #ddd;
+            font-size: 24px;
+        }
+      
+        h4 {
+            font-size:  14px;
+            color: #929293;
+            margin: 0 0 18px 0;
+        }
+        p {
+            color: #929293;
+            line-height: 1.375em;
+        }
+        .button {
+            display: block;
+        }
+        @include bp(inBetween) {
+                display: block;
+                padding: 28px 0 66px 0;
+                text-align: left;
+                width: 90%;
+                margin: 0 auto;
+                    &:first-child {
+                        padding-top: 10px;
+                       
+                    }
+                    &:last-child {
+                        padding-bottom: 66px;
+                        border-bottom: 0;
+                    }
+                    h3 {
+                         font-size: 30px;
+                        margin: 22px 0 8px 0
+                       
+                    }
+                 
+                    h4 {
+                        margin: 0 0 18px 0;
+                    }
+                    img {
+                        float: left;
+                        width: 28%;
+                        min-width: 180px;
+                        margin-right: 8%;
+
+                        overflow: hidden;
+                    }
+                    .button {
+                        width: 30%;
+                        min-width: 190px;
+                        display: inline-block;
+                    }
+           
+        }
+    }
 } 
+
+.sidebar {
+    .blog-author {
+        width: 90%;
+        margin: auto;
+        padding: 0 0 44px 0;
+        text-align: center;
+        clear: both;
+        @include bp(tiny-mob) {
+            width: 80%
+        }
+            img {
+                margin-bottom: 16px;
+                max-width: 180px;
+            }
+            h3 {
+
+                margin: 0 0 8px 0;
+                color: #ddd;
+                font-size: 26px;
+            }
+          
+            h4 {
+
+                font-size:  14px;
+                color: #929293;
+                margin: 0 0 12px 0;
+            }
+            p {
+                
+                color: #9b9b9b;
+                padding-bottom: 18px;
+                line-height: 1.375em;
+            }
+            .button {
+                display: block;
+            }
+                @include bp(inBetween) {
+                    text-align: left;
+                    width: auto;
+                    margin: 0 auto;
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    display: table;
+                     .author-img {
+                        display: table-cell;
+                        min-width: 140px;
+                            img {
+                                width: 100%;
+                            }
+                     }
+
+
+                    .author-bio {
+                        display: table-cell;
+                        vertical-align: top;
+                        width: 100%;
+                        padding-left: 30px;
+
+                            h3 {
+                                font-size: 26px;
+                            }
+                            .button {
+                                width: 200px;
+
+                            }
+                     }
+                      
+
+               
+                }
+                @include bp(non-mob) {
+                    margin-top: 22px;
+                    img {
+                        width: 150px;
+                    }
+
+                }
+      
+    }
+}
 
 footer[role="contentinfo"] {
     background: #ddd;

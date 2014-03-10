@@ -29,15 +29,20 @@
 
 }
 
+
 #breadcrumbs {
         display: inline-block;
         vertical-align: top;
         background: none repeat scroll 0 0 ;
         width: 100%;
-        @include bp(non-mob) {
-            margin-left: 16px;
-            
-        }
+        
+         
+            @include bp(non-mob){
+                padding: 0 0 0 38px;
+            }
+            @include bp(mama-bear){
+                padding: 0 0 0 82px;
+            }
     ul,
     a,
     span {

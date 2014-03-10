@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>About</title>
-
-     <link rel="dns-prefetch" href="http://fonts.googleapis.com/">
-    <link rel="stylesheet" id="bigbang-fonts-css" href="http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic" media="all">
+    <title>Responsive Template - version 1.0</title>
 
     <script src="js/modernizr.js"></script>
 
@@ -40,7 +37,7 @@
                                 <li>
                                 <a href="index.html">Home</a>
                                 </li>
-                                <li>
+                                <li class="is-active">
                                     <a href="leads.html">Leads</a>
                                 </li>
                                 <li>
@@ -49,7 +46,7 @@
                                 <li>
                                     <a href="reporting.html">Reporting</a>
                                 </li>
-                                <li class="is-active">
+                                <li>
                                     <a href="about.html">About</a>
                                 </li>
                         
@@ -72,11 +69,19 @@
                 <nav id="breadcrumbs" class="menu">
                   <ul>
                       <li>
-                          <a href="index.html" class="index" rel="index">
+                          <a href="#" class="index" rel="index">
                               <img src="img/home-crumb.svg" alt="">
                           </a>
                           <ul>
-                             
+                              <li>
+                                  <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                                      <a href="#" itemprop="url">
+                                          <span itemprop="title">Leads</span>
+                                      </a></span>
+                                      <ul>
+                                            
+                                      </ul>
+                                  </li>
                               </ul>
                           </li>
                       </ul>
@@ -93,7 +98,7 @@
                 <section class="page-content">
                     <article>
                         <img src="img/icon.svg" class="page-icon">
-                        <h1>About</h1>
+                        <h1>SEO</h1>
 
                         <p><a name="id380362"><!--anchor--></a>SQUIRE TRELAWNEY, Dr. Livesey, and the rest of these gentlemen having
                         asked me to write down the whole particulars about Treasure Island, from
@@ -118,36 +123,54 @@
                         looking about him at the cliffs and up at our signboard.</p>
                         <p><a name="id380387"><!--anchor--></a>"This is a handy cove," says he at length; "and a pleasant sittyated
                         grog-shop. Much company, mate?"</p>
-                        
+                        <p><a name="id380391"><!--anchor--></a>My father told him no, very little company, the more was the pity.</p>
+                        <p><a name="id380395"><!--anchor--></a>"Well, then," said he, "this is the berth for me. Here you, matey," he
+                        cried to the man who trundled the barrow; "bring up alongside and help
+                        up my chest. I'll stay here a bit," he continued. "I'm a plain man; rum
+                        and bacon and eggs is what I want, and that head up there for to watch
+                        ships off. What you mought call me? You mought call me captain. Oh, I
+                        see what you're at—there"; and he threw down three or four gold pieces
+                        on the threshold. "You can tell me when I've worked through that," says
+                        he, looking as fierce as a commander.</p>
                         
                     </article>
             </section>
 
-            <aside class="sidebar">
-                <div class="staff-member-intro">
-                    <img src="img/blog-author.jpg">
-                    <h3>James Durrant</h3>
-                    <h4>Managing Director, Lead Developer</h4>
-                    <a href="staff-member.html" class="blue button">About James</a>
-
-                </div> 
-
-                <div class="staff-member-intro">
-                    <img src="img/blog-author.jpg">
-                    <h3>James Flannery</h3>
-                    <h4>Digital Marketing</h4>
-                    <a href="staff-member.html" class="blue button">About James</a>
-
-                </div>   
-
-                <div class="staff-member-intro">
-                    <img src="img/blog-author.jpg">
-                    <h3>Eoin Leonard</h3>
-                    <h4>Designer, Front-end Developer</h4>
-                    <a href="staff-member.html" class="blue button">About Eoin</a>
-
-                </div>          
-            </aside>
+            <div class="sidebar">
+                <nav id="info">
+                     <ul id="info-full">
+                            <li class="info-leads">
+                                <a href="leads.html">Leads</a>
+                                <ul>
+                                    <li class="info-top-right">
+                                        <a href="ppc.html"><span>PPC</span></a>
+                                    </li>
+                                    <li class="info-arrow info-top-middle">
+                                        <a href="seo.html"><span>SEO</span></a>
+                                    </li>
+                                    <li class="info-top-left">
+                                        <a href="social-media.html"><span>Social Media</span></a>
+                                    </li>
+                                    <li class="info-bottom-left">
+                                        <a href="email.html"><span>Email</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        <li class="info-conversions dormant">
+                            <a href="conversions.html">Conversions</a>
+                            <ul>
+                                
+                            </ul>
+                        </li>
+                        <li class="info-reporting dormant">
+                        <a href="reporting.html">Reporting</a>
+                            <ul>
+                               
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>        
+            </div>
         </div>
     </div>
   
