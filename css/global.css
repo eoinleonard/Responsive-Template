@@ -2466,14 +2466,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   color: white;
   text-decoration: none;
 }
-.blog-pagin .prev-post.orange.button {
-  background-color: #b93816 !important;
-}
-.blog-pagin .prev-post.orange.button:hover {
-  background-color: #e54e27 !important;
-}
-.blog-pagin .prev-post.orange.button:active {
-  background-color: #942d12 !important;
+.blog-pagin .prev-post {
+  color: #babbbb;
 }
 .blog-pagin a.next-post {
   position: relative;
@@ -2490,7 +2484,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   position: absolute;
   right: 10px;
   top: 50%;
-  margin-top: -10px;
+  margin-top: -8px;
 }
 
 footer[role="contentinfo"] {
