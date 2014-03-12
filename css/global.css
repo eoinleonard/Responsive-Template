@@ -1667,7 +1667,6 @@ body * {
 .box .sidebar {
   width: 100%;
   background-color: #414142;
-  padding: 32px 0 0 0;
 }
 .box .sidebar img {
   border-radius: 100%;
@@ -2147,7 +2146,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 .sidebar .staff-member-intro {
   width: 200px;
   margin: auto;
-  padding: 28px 0 22px 0;
+  padding: 12px 0 16px 0;
   text-align: center;
   clear: both;
   border-bottom: 1px solid #606060;
@@ -2182,7 +2181,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
     display: block;
     padding: 28px 0 66px 0;
     text-align: left;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   .sidebar .staff-member-intro:first-child {
@@ -2225,6 +2224,11 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
     width: 80%;
   }
 }
+@media (min-width: 865px) {
+  .sidebar .blog-author {
+    width: 100%;
+  }
+}
 .sidebar .blog-author img {
   margin-bottom: 16px;
   max-width: 180px;
@@ -2252,8 +2256,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
     text-align: left;
     width: auto;
     margin: 0 auto;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 0;
+    margin-right: 0;
     display: table;
   }
   .sidebar .blog-author .author-img {
@@ -2488,6 +2492,46 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
   right: 10px;
   top: 50%;
   margin-top: -8px;
+}
+
+.sidebar {
+  padding: 22px 5% 22px 5%;
+  max-width: 54em;
+}
+@media (min-width: 34em) {
+  .sidebar {
+    padding: 22px 10% 22px 10%;
+  }
+}
+@media (min-width: 34em) and (max-width: 54em) {
+  .sidebar {
+    max-width: 54em;
+  }
+}
+@media (min-width: 865px) {
+  .sidebar {
+    max-width: 240px;
+    padding: 144px 22px 0 22px;
+  }
+}
+.sidebar .map {
+  max-width: 54em;
+  margin: auto;
+}
+@media (min-width: 34em) and (max-width: 54em) {
+  .sidebar .map {
+    max-width: 54em;
+    margin: 0;
+  }
+}
+@media (min-width: 865px) {
+  .sidebar .map {
+    max-width: 54em;
+  }
+}
+.sidebar .map img {
+  border-radius: 0;
+  padding: 0;
 }
 
 footer[role="contentinfo"] {

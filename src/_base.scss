@@ -136,8 +136,9 @@ body {
 
         .sidebar {
             width: 100%;
+
             background-color: $sidebar-bg;
-            padding: 32px 0 0 0;
+            
                 img {
                     border-radius: 100%;
 
@@ -629,12 +630,13 @@ a {
 
 .sidebar {
     overflow: hidden;
+
     .staff-member-intro
     {
 
         width: 200px;
         margin: auto;
-        padding: 28px 0 22px 0;
+        padding: 12px 0 16px 0;
         text-align: center;
         clear: both;
         border-bottom: 1px solid #606060;
@@ -670,7 +672,7 @@ a {
                 display: block;
                 padding: 28px 0 66px 0;
                 text-align: left;
-                width: 90%;
+                width: 100%;
                 margin: 0 auto;
                     &:first-child {
                         padding-top: 10px;
@@ -717,6 +719,9 @@ a {
         @include bp(tiny-mob) {
             width: 80%
         }
+         @include bp(non-mob) {
+            width: 100%
+        }
             img {
                 margin-bottom: 16px;
                 max-width: 180px;
@@ -747,8 +752,8 @@ a {
                     text-align: left;
                     width: auto;
                     margin: 0 auto;
-                    margin-left: 10%;
-                    margin-right: 10%;
+                    margin-left: 0;
+                    margin-right: 0;
                     display: table;
                      .author-img {
                         display: table-cell;
@@ -1028,6 +1033,39 @@ a {
     }
 
 
+}
+
+.sidebar {
+    padding: 22px 5% 22px 5%;
+    max-width: 54em;
+    @include bp(tiny-mob) {
+            
+            padding: 22px 10% 22px 10%;
+        }
+        @include bp(inBetween) {
+            max-width: 54em;
+            
+        }
+         @include bp(non-mob) {
+            max-width: 240px;
+            padding: 144px 22px 0 22px;
+        }
+    .map {
+        max-width: 54em;
+        margin: auto;
+            @include bp(inBetween) {
+            max-width: 54em;
+            margin: 0;
+        }
+            @include bp(non-mob) {
+            max-width: 54em;
+            
+        }
+        img {
+            border-radius: 0;
+            padding: 0;
+        }
+    }
 }
 
 footer[role="contentinfo"] {
