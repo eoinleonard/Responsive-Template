@@ -205,13 +205,13 @@
             }
             .current {
                     a {
-                        color: darken(#e8e8e8, 10%);
+                        color: darken(#e8e8e8, 30%);
                         background: none repeat scroll 0 0 lighten($bread-bg, 10%);
                         &:hover,
                         &:active {
                             color: darken(#e8e8e8, 10%);
                             background: none repeat scroll 0 0 lighten($bread-bg, 10%);
-
+                            cursor: default;
                         }
                         &:hover {
                             &:after {
@@ -236,13 +236,14 @@
         }
         .current {
                     a {
-                        color: darken(#e8e8e8, 10%);
+                        color: darken(#e8e8e8, 30%);
                         background: none repeat scroll 0 0 lighten($bread-bg, 5%);
+
                         &:hover,
                         &:active {
-                            color: darken(#e8e8e8, 10%);
+                            color: darken(#e8e8e8, 30%);
                             background: none repeat scroll 0 0 lighten($bread-bg, 5%);
-
+                            cursor: default;
                         }
                         &:hover {
                             &:after {

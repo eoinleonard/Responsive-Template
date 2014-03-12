@@ -1014,12 +1014,13 @@ p a:active {
   -webkit-transform: rotate(90deg);
 }
 #breadcrumbs ul li li .current a {
-  color: #cfcfcf;
+  color: #9c9c9c;
   background: none repeat scroll 0 0 #575757;
 }
 #breadcrumbs ul li li .current a:hover, #breadcrumbs ul li li .current a:active {
   color: #cfcfcf;
   background: none repeat scroll 0 0 #575757;
+  cursor: default;
 }
 #breadcrumbs ul li li .current a:hover:after {
   content: "";
@@ -1037,12 +1038,13 @@ p a:active {
   -webkit-transform: rotate(90deg);
 }
 #breadcrumbs ul li .current a {
-  color: #cfcfcf;
+  color: #9c9c9c;
   background: none repeat scroll 0 0 #4a4a4a;
 }
 #breadcrumbs ul li .current a:hover, #breadcrumbs ul li .current a:active {
-  color: #cfcfcf;
+  color: #9c9c9c;
   background: none repeat scroll 0 0 #4a4a4a;
+  cursor: default;
 }
 #breadcrumbs ul li .current a:hover:after {
   content: "";
@@ -2145,7 +2147,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 .sidebar .staff-member-intro {
   width: 200px;
   margin: auto;
-  padding: 28px 0 44px 0;
+  padding: 28px 0 22px 0;
   text-align: center;
   clear: both;
   border-bottom: 1px solid #606060;
@@ -2156,6 +2158,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 }
 .sidebar .staff-member-intro img {
   padding: 12px;
+  width: 170px;
 }
 .sidebar .staff-member-intro h3 {
   margin: 0 0 4px 0;
