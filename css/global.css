@@ -2511,25 +2511,63 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 @media (min-width: 865px) {
   .sidebar {
     max-width: 240px;
-    padding: 144px 22px 0 22px;
+    padding: 126px 22px 0 22px;
   }
 }
-.sidebar .map {
+
+.sidebar.contact-sidebar h3 {
+  color: #ddd;
+  font-size: 28px;
+  padding-bottom: 22px;
+}
+.sidebar.contact-sidebar .call-us a {
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 22px;
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #43a050;
+  border-bottom: 6px solid rgba(0, 0, 0, 0.15);
+}
+.sidebar.contact-sidebar .call-us a:active {
+  background-color: #3b8e47;
+}
+@media (min-width: 34em) {
+  .sidebar.contact-sidebar .call-us a {
+    color: #9b9b9b;
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: transparent;
+    border-bottom: 0;
+    margin-bottom: 8px;
+  }
+}
+.sidebar.contact-sidebar address {
+  color: #9b9b9b;
+  margin-bottom: 12px;
+  display: inline-block;
+  font-size: 18px;
+}
+.sidebar.contact-sidebar .map {
   max-width: 54em;
   margin: auto;
 }
 @media (min-width: 34em) and (max-width: 54em) {
-  .sidebar .map {
+  .sidebar.contact-sidebar .map {
     max-width: 54em;
     margin: 0;
   }
 }
 @media (min-width: 865px) {
-  .sidebar .map {
+  .sidebar.contact-sidebar .map {
     max-width: 54em;
   }
 }
-.sidebar .map img {
+.sidebar.contact-sidebar .map img {
   border-radius: 0;
   padding: 0;
 }
