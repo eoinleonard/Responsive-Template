@@ -319,7 +319,7 @@
 			    -ms-transform:rotate(135deg); /* IE 9 */
 			    -webkit-transform:rotate(135deg); /* Safari and Chrome */
     	}
-   
+  
 }
 
 
@@ -327,30 +327,30 @@
 .info-conversions a,
 .info-reporting a {
 				&:before {
-					  		transition: all 0.3s;
-			  				content: " ";
-			  				width: 0px;
-			  				height: 0px;
-			  				background-color: rgba(255, 255, 255, 0.05);
-			  				position: absolute;
-			  				top: 65px;
-			  				left: 65px;
-			  				z-index: -10;
-			  				border-radius: 100%;
+			  		transition: all 0.3s;
+	  				content: " ";
+	  				width: 0px;
+	  				height: 0px;
+	  				background-color: rgba(255, 255, 255, 0.05);
+	  				position: absolute;
+	  				top: 65px;
+	  				left: 65px;
+	  				z-index: -10;
+	  				border-radius: 100%;
 					
 						}
 		&:hover {
 			
 				&:before {
-					  		transition: all 0.3s;
-			  				content: " ";
-			  				width: 130px;
-			  				height: 130px;
-			  				background-color: rgba(255, 255, 255, 0.1);
-			  				top: 0px;
-			  				left: 0px;
-			  				z-index: -10;
-			  				border-radius: 100%;
+			  		transition: all 0.3s;
+	  				content: " ";
+	  				width: 130px;
+	  				height: 130px;
+	  				background-color: rgba(255, 255, 255, 0.1);
+	  				top: 0px;
+	  				left: 0px;
+	  				z-index: -10;
+	  				border-radius: 100%;
 					
 						}
 			
@@ -358,10 +358,8 @@
 		&:active {
 			
 				&:before {
-					  		transition: none;
-			  				
-			  				background-color: rgba(0, 0, 0, 0.1);
-			  				
+			  		transition: none;
+	  				background-color: rgba(0, 0, 0, 0.1);		
 					
 						}
 			
@@ -435,7 +433,7 @@
 			}
 		}
 	
-	}
+}
 
 
 
@@ -449,26 +447,22 @@
 		position: absolute;
 		top: 30px;
 		
-
 	}
 
 	.info-conversions.dormant {
 		position: absolute;
 		top: 320px;
 		
-
 	}
 	.info-conversions.info-active {
 		position: absolute;
 		top: 410px;
 		
-
 	}
 	.info-reporting.info-active {
 		position: absolute;
 		top: 610px;
 		
-
 	}
 
 	.info-leads.dormant,
