@@ -1065,7 +1065,7 @@ p a:active {
 #info {
   float: none;
   width: 100%;
-  height: 1140px;
+  height: 1100px;
   margin: 0;
   padding: 0;
   display: block;
@@ -1100,12 +1100,12 @@ p a:active {
 #info #info-full:after {
   content: "";
   width: 0px;
-  height: 900px;
+  height: 800px;
   position: absolute;
   top: 60px;
-  right: 59px;
+  right: 60px;
   background-color: transparent;
-  border: 12px solid #555;
+  border: 11px solid #555;
   border-radius: 0;
   z-index: -1;
 }
@@ -1148,20 +1148,18 @@ p a:active {
   position: absolute;
   background-color: #e54e27;
   border-radius: 100%;
-  border: 5px solid #e6e6e6;
   font-weight: bold;
   transition: all 0.3s;
 }
 #info-full li a {
   color: white;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
   position: relative;
   z-index: 10;
 }
 #info-full li li {
   width: 69px;
   height: 69px;
-  border: 3px solid #e6e6e6;
   position: absolute;
   transition: all 0.3s;
   background-color: #3f92bc;
@@ -1183,7 +1181,7 @@ p a:active {
   height: 69px;
   width: 69px;
   font-size: 12px;
-  padding: 0 0 4px 0;
+  padding: 1px 0 0px 0;
   text-align: center;
 }
 #info-full li li:hover a:before {
@@ -1200,12 +1198,12 @@ p a:active {
 #info .info-leads a,
 #info #info .info-conversions a,
 #info #info .info-reporting a {
-  padding-bottom: 10px;
+  padding-bottom: 2px;
 }
 
 #info .info-leads {
   position: absolute;
-  top: 140px;
+  top: 130px;
   background-image: url(../img/icon-info.svg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -1213,7 +1211,7 @@ p a:active {
 }
 #info .info-conversions {
   position: absolute;
-  top: 510px;
+  top: 480px;
   background-image: url(../img/icon-info.svg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -1228,7 +1226,7 @@ p a:active {
 }
 #info .info-reporting {
   position: absolute;
-  top: 880px;
+  top: 830px;
   background-image: url(../img/icon-info.svg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -1243,8 +1241,8 @@ p a:active {
 }
 
 .info-top-left {
-  top: -71px;
-  right: 100px;
+  top: -63px;
+  right: 104px;
 }
 .info-top-left:after {
   content: "";
@@ -1252,10 +1250,10 @@ p a:active {
   height: 0;
   border-left: 9px solid rgba(255, 255, 255, 0);
   border-right: 9px solid rgba(255, 255, 255, 0);
-  border-top: 9px solid #e6e6e6;
+  border-top: 9px solid #3f92bc;
   position: absolute;
-  right: -5px;
-  bottom: 1px;
+  right: -1px;
+  bottom: 3px;
   transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   /* IE 9 */
@@ -1264,8 +1262,8 @@ p a:active {
 }
 
 .info-top-middle {
-  top: -120px;
-  left: 30px;
+  top: -113px;
+  left: 34px;
 }
 .info-top-middle:after {
   content: "";
@@ -1273,15 +1271,15 @@ p a:active {
   height: 0;
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
-  border-top: 9px solid #e6e6e6;
+  border-top: 9px solid #3f92bc;
   position: absolute;
-  right: 23px;
-  bottom: -11px;
+  right: 26px;
+  bottom: -8px;
 }
 
 .info-top-right {
-  top: -71px;
-  right: -41px;
+  top: -63px;
+  right: -34px;
 }
 .info-top-right:after {
   content: "";
@@ -1289,10 +1287,10 @@ p a:active {
   height: 0;
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
-  border-top: 9px solid #e6e6e6;
+  border-top: 9px solid #3f92bc;
   position: absolute;
-  left: -5px;
-  bottom: 1px;
+  left: -1px;
+  bottom: 3px;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -1301,8 +1299,8 @@ p a:active {
 }
 
 .info-bottom-left {
-  top: 131px;
-  right: 100px;
+  top: 138px;
+  right: 104px;
 }
 .info-bottom-left:after {
   content: "";
@@ -1310,10 +1308,10 @@ p a:active {
   height: 0;
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
-  border-top: 9px solid #e6e6e6;
+  border-top: 9px solid #3f92bc;
   position: absolute;
-  right: -5px;
-  top: 1px;
+  right: -1px;
+  top: 3px;
   transform: rotate(225deg);
   -ms-transform: rotate(225deg);
   /* IE 9 */
@@ -1331,15 +1329,15 @@ p a:active {
   height: 0;
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
-  border-top: 9px solid #e6e6e6;
+  border-top: 9px solid #3f92bc;
   position: absolute;
   left: 23px;
   top: -23px;
 }
 
 .info-bottom-right {
-  top: 134px;
-  right: -41px;
+  top: 138px;
+  right: -34px;
 }
 .info-bottom-right:after {
   content: "";
@@ -1347,10 +1345,10 @@ p a:active {
   height: 0;
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
-  border-top: 9px solid #e6e6e6;
+  border-top: 9px solid #3f92bc;
   position: absolute;
-  left: -5px;
-  top: 1px;
+  left: -1px;
+  top: 3px;
   transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   /* IE 9 */
