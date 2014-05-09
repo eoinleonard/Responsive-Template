@@ -56,7 +56,7 @@ body {
 .box, .box-nosidebar {  // white box around main content on all pages
     position: relative;
     width: 100%;
-    background-color: #f7f7f7;
+    background-color: white;
     margin-bottom: $padding;
     @include box-shadow(0 0 7px rgba(0, 0, 0, 0.05));
 }
@@ -102,12 +102,35 @@ body {
             @include bp(non-mob) {
                 display: table-cell;
                 vertical-align: top;
-               
+                padding-left: $padding;
+                padding-right: $padding;
             }
              @include bp(mama-bear){
-                      
+                        padding-left: $padding*3;
+                        padding-right: $padding*3;
                     }
-           
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            p,
+            ul,
+            ol,
+            .post-meta,
+            #comment-container,
+            .contact-form {
+                  padding: 0 5%;
+                    @include bp(tiny-mob) {
+                        padding: 0 10%;
+                    }
+                    @include bp(non-mob){
+                        padding: 0 $padding*3;
+                    }
+                    @include bp(mama-bear){
+                        
+                    }
+                }
 
         }
 
@@ -165,7 +188,7 @@ a {
                 margin-left: $padding;
             }
             @include bp(mama-bear) {
-              
+                margin-left: $padding*3;
                 width: 34%;
             }
 
@@ -314,11 +337,11 @@ a {
 
 .stripe-grey {
     background-color: $bread-bg;
-   
+    border-top: 1px solid #303030;
     margin-top: 0px;
 }
 .stripe-mid-grey { // banner below infographic with blue CTA
-    background-color: #999999;
+    background-color: #4c4c4c;
     padding: 8px 0 14px 0;
 }
 
@@ -421,7 +444,7 @@ a {
                 
         }
         @include bp(mama-bear) {
-       
+        margin-right: $padding;
         }
     .close-btn {
         display: none;
@@ -480,12 +503,12 @@ a {
         width: 200px;          //width of main logo in header//
         display: inline-block;
         float: left;
-       
+        margin-left: $padding;
         .nav-btn {
             @include visuallyhidden;
         }
     @include bp(mama-bear) {
-      
+        margin-left: $padding*3;
         }
        
 }
